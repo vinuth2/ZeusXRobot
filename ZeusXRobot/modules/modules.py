@@ -1,11 +1,11 @@
 import importlib
 import collections
 
-from VegetaRobot import dispatcher, telethn
-from VegetaRobot.__main__ import (CHAT_SETTINGS, DATA_EXPORT, DATA_IMPORT,
+from ZeusXRobot import dispatcher, telethn
+from ZeusXRobot.__main__ import (CHAT_SETTINGS, DATA_EXPORT, DATA_IMPORT,
                                    HELPABLE, IMPORTED, MIGRATEABLE, STATS,
                                    USER_INFO, USER_SETTINGS)
-from VegetaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from ZeusXRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
