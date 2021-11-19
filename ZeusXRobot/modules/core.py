@@ -1,16 +1,16 @@
 from VegetaRobot import telethn as tbot
-from VegetaRobot.events import register
+from ZeusXRobot.events import register
 import os
 import asyncio
 import os
 import time
 
 from datetime import datetime
-from VegetaRobot import OWNER_ID, DEV_USERS
-from VegetaRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from VegetaRobot import TEMP_DOWNLOAD_DIRECTORY
+from ZeusXRobot import OWNER_ID, DEV_USERS
+from ZeusXRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from ZeusXRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './VegetaRobot/imagefiles/vegeta2.png'
+water = './ZeusXRobot/imagefiles/vegeta2.png'
 client = tbot
 
 @register(pattern=r"^/upload ?(.*)")
