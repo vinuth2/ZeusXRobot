@@ -14,17 +14,17 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from VegetaRobot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
+from ZeusXRobot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
                           INFOPIC, dispatcher, sw)
-from VegetaRobot.__main__ import STATS, TOKEN, USER_INFO
-import VegetaRobot.modules.sql.userinfo_sql as sql
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.sql.global_bans_sql import is_user_gbanned
-from VegetaRobot.modules.sql.afk_sql import is_afk, check_afk_status
-from VegetaRobot.modules.sql.users_sql import get_user_num_chats
-from VegetaRobot.modules.helper_funcs.chat_status import sudo_plus
-from VegetaRobot.modules.helper_funcs.extraction import extract_user
-from VegetaRobot import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
+from ZeusXRobot.__main__ import STATS, TOKEN, USER_INFO
+import ZeusXRobot.modules.sql.userinfo_sql as sql
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.sql.global_bans_sql import is_user_gbanned
+from ZeusXRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from ZeusXRobot.modules.sql.users_sql import get_user_num_chats
+from ZeusXRobot.modules.helper_funcs.chat_status import sudo_plus
+from ZeusXRobot.modules.helper_funcs.extraction import extract_user
+from ZeusXRobot import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -283,7 +283,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Power level of this person is 'B-Ranks'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Power level of this person is 'tigers of vegeta'."
+        text += "\n\nThe Power level of this person is 'tigers of zeus'."
         disaster_level_present = True
     elif user.id in WOLVES:
         text += "\n\nThe Power level of this person is 'wolves'."
