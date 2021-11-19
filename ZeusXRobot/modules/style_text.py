@@ -1,8 +1,6 @@
-# © @pegasusXteam - © @VegetaRobot
-
-from VegetaRobot import dispatcher
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.alternate import typing_action
+from ZeusXRobot import dispatcher
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
@@ -352,5 +350,3 @@ __handlers__ = [TEXT5_HANDLER]
 
 
 
-#this module only creat for @VegetaRobot don't copy it you copy this plz don't remove below text
-# © @VegetaRobot - © @pegasusXteam
