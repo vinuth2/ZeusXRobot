@@ -3,19 +3,19 @@ from typing import Optional, List
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from VegetaRobot import TIGERS, WOLVES, dispatcher
-from VegetaRobot.modules.helper_funcs.chat_status import (bot_admin,
+from ZeusXRobot import TIGERS, WOLVES, dispatcher
+from ZeusXRobot.modules.helper_funcs.chat_status import (bot_admin,
                                                            is_user_admin,
                                                            user_admin,
                                                            user_admin_no_reply)
-from VegetaRobot.modules.log_channel import loggable
-from VegetaRobot.modules.sql import antiflood_sql as sql
+from ZeusXRobot.modules.log_channel import loggable
+from ZeusXRobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, Filters, MessageHandler, run_async
 from telegram.utils.helpers import mention_html, escape_markdown
-from VegetaRobot.modules.helper_funcs.string_handling import extract_time
-from VegetaRobot.modules.connection import connected
-from VegetaRobot.modules.helper_funcs.alternate import send_message
+from ZeusXRobot.modules.helper_funcs.string_handling import extract_time
+from ZeusXRobot.modules.connection import connected
+from ZeusXRobot.modules.helper_funcs.alternate import send_message
 FLOOD_GROUP = 3
 
 
