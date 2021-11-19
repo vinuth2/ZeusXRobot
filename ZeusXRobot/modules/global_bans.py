@@ -9,17 +9,17 @@ from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async)
 from telegram.utils.helpers import mention_html
 
-import VegetaRobot.modules.sql.global_bans_sql as sql
-from VegetaRobot.modules.sql.users_sql import get_user_com_chats
-from VegetaRobot import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
+import ZeusXRobot.modules.sql.global_bans_sql as sql
+from ZeusXRobot.modules.sql.users_sql import get_user_com_chats
+from ZeusXRobot import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
                           SUPPORT_CHAT, SPAMWATCH_SUPPORT_CHAT, DEMONS, TIGERS,
                           WOLVES, sw, dispatcher)
-from VegetaRobot.modules.helper_funcs.chat_status import (is_user_admin,
+from ZeusXRobot.modules.helper_funcs.chat_status import (is_user_admin,
                                                            support_plus,
                                                            user_admin)
-from VegetaRobot.modules.helper_funcs.extraction import (extract_user,
+from ZeusXRobot.modules.helper_funcs.extraction import (extract_user,
                                                           extract_user_and_text)
-from VegetaRobot.modules.helper_funcs.misc import send_to_list
+from ZeusXRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
  
