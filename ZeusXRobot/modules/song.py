@@ -4,7 +4,7 @@ import aiohttp
 import youtube_dl
 
 from pyrogram import filters
-from VegetaRobot import pgram
+from ZeusXRobot import pgram
 from youtube_search import YoutubeSearch
 from ZeusXRobot.pyroerror import capture_err
 from ZeusXRobot.modules.disable import DisableAbleCommandHandler
