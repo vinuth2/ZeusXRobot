@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from VegetaRobot.modules.sql import SESSION, BASE
+from ZeusXRobot.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
