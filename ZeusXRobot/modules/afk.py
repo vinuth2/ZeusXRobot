@@ -1,10 +1,10 @@
 import random, html
 
-from VegetaRobot import dispatcher
-from VegetaRobot.modules.disable import (DisableAbleCommandHandler,
+from ZeusXRobot import dispatcher
+from ZeusXRobot.modules.disable import (DisableAbleCommandHandler,
                                           DisableAbleMessageHandler)
-from VegetaRobot.modules.sql import afk_sql as sql
-from VegetaRobot.modules.users import get_user_id
+from ZeusXRobot.modules.sql import afk_sql as sql
+from ZeusXRobot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
