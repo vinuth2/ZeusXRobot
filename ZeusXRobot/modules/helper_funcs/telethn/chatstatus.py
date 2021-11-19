@@ -1,5 +1,5 @@
-from VegetaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from VegetaRobot import DRAGONS
+from ZeusXRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from ZeusXRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
