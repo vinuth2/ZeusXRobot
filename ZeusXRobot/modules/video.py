@@ -1,7 +1,7 @@
 import asyncio, time, os, asyncio, json
 from telethon.tl.types import DocumentAttributeAudio
-from VegetaRobot.events import register
-from VegetaRobot.utils import progress
+from ZeusXRobot.events import register
+from ZeusXRobot.utils import progress
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import (DownloadError, ContentTooShortError,
 
