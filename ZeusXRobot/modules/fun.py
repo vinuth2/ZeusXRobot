@@ -10,11 +10,11 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import escape_markdown
 
-import VegetaRobot.modules.fun_strings as fun
-from VegetaRobot import DEMONS, DRAGONS, dispatcher
-from VegetaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
-from VegetaRobot.modules.helper_funcs.alternate import typing_action
-from VegetaRobot.modules.helper_funcs.extraction import extract_user
+import ZeusXRobot.modules.fun_strings as fun
+from ZeusXRobot import DEMONS, DRAGONS, dispatcher
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from ZeusXRobot.modules.helper_funcs.alternate import typing_action
+from ZeusXRobot.modules.helper_funcs.extraction import extract_user
 
 
 @run_async
@@ -94,8 +94,8 @@ def dare(update, context):
 
                                                                          
     
-GOODMORNING_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodmorning|gm|good morning)"), goodmorning, friendly="goodmorning")
-GOODNIGHT_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodnight|gn|good night)"), goodnight, friendly="goodnight")
+GOODMORNING_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodmorning|good morning)"), goodmorning, friendly="goodmorning")
+GOODNIGHT_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodnight|good night)"), goodnight, friendly="goodnight")
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 GBUN_HANDLER = CommandHandler("gbun", gbun)
 GBAM_HANDLER = CommandHandler("gbam", gbam)
