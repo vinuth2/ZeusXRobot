@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer, String, Boolean
 
-from VegetaRobot.modules.sql import BASE, SESSION
+from ZeusXRobot.modules.sql import BASE, SESSION
 
 
 class GloballyMutedUsers(BASE):
