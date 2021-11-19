@@ -1,6 +1,6 @@
 import importlib
 import time
-import rondom
+import random
 import re
 from sys import argv
 from typing import Optional
