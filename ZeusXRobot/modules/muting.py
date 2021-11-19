@@ -1,23 +1,18 @@
-"""
-module Creat my @VegetaRobot
-Copyrights to @PegasusXteam [•_•]
-"""
-
 import html
 import re
 from typing import Optional
 
-from VegetaRobot import LOGGER, TIGERS, dispatcher
-from VegetaRobot.modules.helper_funcs.chat_status import (bot_admin,
+from ZeusXRobot import LOGGER, TIGERS, dispatcher
+from ZeusXRobot.modules.helper_funcs.chat_status import (bot_admin,
                                                           user_admin_no_reply,
                                                            can_restrict,
                                                            connection_status,
                                                            is_user_admin,
                                                            user_admin)
-from VegetaRobot.modules.helper_funcs.extraction import (extract_user,
+from ZeusXRobot.modules.helper_funcs.extraction import (extract_user,
                                                           extract_user_and_text)
-from VegetaRobot.modules.helper_funcs.string_handling import extract_time
-from VegetaRobot.modules.log_channel import loggable
+from ZeusXRobot.modules.helper_funcs.string_handling import extract_time
+from ZeusXRobot.modules.log_channel import loggable
 
 from telegram import (
     Bot, 
