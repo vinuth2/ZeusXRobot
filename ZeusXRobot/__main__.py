@@ -698,7 +698,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    data_callback_handler = CallbackQueryHandler(vegeta_data_callback, pattern=r"zeus_")
+    data_callback_handler = CallbackQueryHandler(zeus_data_callback, pattern=r"zeus_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
