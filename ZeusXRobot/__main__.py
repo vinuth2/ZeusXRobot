@@ -1,5 +1,6 @@
 import importlib
 import time
+import rondom
 import re
 from sys import argv
 from typing import Optional
@@ -85,6 +86,18 @@ I am *Zeus*
 ┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
 ┗━━━━━━━━━━━━━━━━━━━━━┛
 """
+STICKERS = (
+      "CAACAgUAAxkBAAIGrGGGn-Y0ZEtOAWj4rSFfokXKFWl_AALUBAAC8TkIVHhJNZNm4ulMIgQ",
+      "CAACAgUAAxkBAAIGrWGGn-blIvzqA5CMaLAGA-r3enDdAAK_BAACn_A5VDXwOwOAz9i7IgQ",
+      "CAACAgUAAxkBAAIGrmGGn-Zo85pClcjZZdMX-ryEzeqCAAL4BAACgJwxVGmzzmabJzd4IgQ",
+      "CAACAgUAAxkBAAIGr2GGn-bUm7JhkN68FKaSruI4dJW7AALjBAACJ7s4VDpjISX5JQ_IIgQ",
+      "CAACAgUAAxkBAAIGsGGGn-aeQMpFq4IKOylHTV5gWTc5AALeBAACBoo5VGUAAUbgTfwyyyIE",
+      "CAACAgUAAxkBAAIHpmGHcr97fsh-7H0559BlL-o5f62JAALHAwAChBc4VEdHUZ07WK8gIgQ",
+      "CAACAgUAAxkBAAIHpWGHcr_OYD9FMYUiVvxZpHOCMV2vAAK3AwACi0tAVJsYFy-IzRTkIgQ",
+      "CAACAgUAAxkBAAIHpGGHcr7EU3W0TQABwYj6NY9HKiA2HQACNwUAAudHQFSFKbPmh42akCIE",
+      "CAACAgUAAxkBAAIHo2GHcr7jld_dmN0Vj4Nn7FvSlwHYAAJUBAAC7zVAVKeMJtMtQ9LjIgQ",
+      "CAACAgUAAxkBAAIHomGHcr6hn5DM4BcLlcCRXWHAWCQuAAIRAwACF0A5VFriPyCcEARWIgQ",
+)
 
 buttons = [
     [
