@@ -11,7 +11,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from VegetaRobot import (
+from ZeusXRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -21,9 +21,9 @@ from VegetaRobot import (
     WOLVES,
     dispatcher,
 )
-import VegetaRobot.modules.sql.users_sql as sql
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.chat_status import (
+import ZeusXRobot.modules.sql.users_sql as sql
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     bot_admin,
     can_restrict,
@@ -35,9 +35,9 @@ from VegetaRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from VegetaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from VegetaRobot.modules.helper_funcs.string_handling import extract_time
-from VegetaRobot.modules.log_channel import gloggable, loggable
+from ZeusXRobot.modules.helper_funcs.extraction import extract_user_and_text
+from ZeusXRobot.modules.helper_funcs.string_handling import extract_time
+from ZeusXRobot.modules.log_channel import gloggable, loggable
 
 
 @run_async
