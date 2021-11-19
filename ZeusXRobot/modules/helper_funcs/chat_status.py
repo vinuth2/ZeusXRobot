@@ -406,6 +406,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from VegetaRobot.modules import connection
+from ZeusXRobot.modules import connection
 
 connected = connection.connected
