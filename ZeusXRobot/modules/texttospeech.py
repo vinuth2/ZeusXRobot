@@ -1,4 +1,4 @@
-from VegetaRobot import telethn as tbot
+from ZeusXRobot import telethn as tbot
 import os
 
 from gtts import gTTS
@@ -8,9 +8,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from VegetaRobot import *
+from ZeusXRobot import *
 
-from VegetaRobot.events import register
+from ZeusXRobot.events import register
 
 
 async def is_register_admin(chat, user):
