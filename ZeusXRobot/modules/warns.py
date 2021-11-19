@@ -3,21 +3,21 @@ import re
 from typing import Optional
 
 import telegram
-from VegetaRobot import TIGERS, WOLVES, dispatcher
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.chat_status import (bot_admin,
+from ZeusXRobot import TIGERS, WOLVES, dispatcher
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.helper_funcs.chat_status import (bot_admin,
                                                            can_restrict,
                                                            is_user_admin,
                                                            user_admin,
                                                            user_admin_no_reply)
-from VegetaRobot.modules.helper_funcs.extraction import (extract_text,
+from ZeusXRobot.modules.helper_funcs.extraction import (extract_text,
                                                           extract_user,
                                                           extract_user_and_text)
-from VegetaRobot.modules.helper_funcs.filters import CustomFilters
-from VegetaRobot.modules.helper_funcs.misc import split_message
-from VegetaRobot.modules.helper_funcs.string_handling import split_quotes
-from VegetaRobot.modules.log_channel import loggable
-from VegetaRobot.modules.sql import warns_sql as sql
+from ZeusXRobot.modules.helper_funcs.filters import CustomFilters
+from ZeusXRobot.modules.helper_funcs.misc import split_message
+from ZeusXRobot.modules.helper_funcs.string_handling import split_quotes
+from ZeusXRobot.modules.log_channel import loggable
+from ZeusXRobot.modules.sql import warns_sql as sql
 from telegram import (CallbackQuery, Chat, InlineKeyboardButton,
                       InlineKeyboardMarkup, Message, ParseMode, Update, User)
 from telegram.error import BadRequest
