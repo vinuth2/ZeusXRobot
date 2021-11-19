@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from VegetaRobot import EVENT_LOGS, LOGGER, dispatcher
-    from VegetaRobot.modules.helper_funcs.chat_status import user_admin
-    from VegetaRobot.modules.sql import log_channel_sql as sql
+    from ZeusXRobot import EVENT_LOGS, LOGGER, dispatcher
+    from ZeusXRobot.modules.helper_funcs.chat_status import user_admin
+    from ZeusXRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
 
