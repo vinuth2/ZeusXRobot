@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from VegetaRobot import (
+from ZeusXRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -22,10 +22,10 @@ from VegetaRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from VegetaRobot.modules import ALL_MODULES
-from VegetaRobot.modules.helper_funcs.chat_status import is_user_admin
-from VegetaRobot.modules.helper_funcs.misc import paginate_modules
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules import ALL_MODULES
+from ZeusXRobot.modules.helper_funcs.chat_status import is_user_admin
+from ZeusXRobot.modules.helper_funcs.misc import paginate_modules
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
