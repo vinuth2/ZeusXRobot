@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from VegetaRobot import LOGGER, dispatcher
-from VegetaRobot.modules.disable import DisableAbleMessageHandler
-from VegetaRobot.modules.helper_funcs.regex_helper import (infinite_loop_check)
+from ZeusXRobot import LOGGER, dispatcher
+from ZeusXRobot.modules.disable import DisableAbleMessageHandler
+from ZeusXRobot.modules.helper_funcs.regex_helper import (infinite_loop_check)
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
