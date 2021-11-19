@@ -1,5 +1,5 @@
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.helper_funcs.chat_status import user_admin
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
 from VegetaRobot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
