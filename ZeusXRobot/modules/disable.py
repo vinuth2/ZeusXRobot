@@ -2,10 +2,10 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from VegetaRobot import dispatcher
-from VegetaRobot.modules.helper_funcs.handlers import (CMD_STARTERS,
+from ZeusXRobot import dispatcher
+from ZeusXRobot.modules.helper_funcs.handlers import (CMD_STARTERS,
                                                         SpamChecker)
-from VegetaRobot.modules.helper_funcs.misc import is_module_loaded
+from ZeusXRobot.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, RegexHandler)
@@ -18,7 +18,7 @@ if is_module_loaded(FILENAME):
 
     from VegetaRobot.modules.helper_funcs.chat_status import (
         connection_status, is_user_admin, user_admin)
-    from VegetaRobot.modules.sql import disable_sql as sql
+    from ZeusXRobot.modules.sql import disable_sql as sql
     from telegram.ext.dispatcher import run_async
 
     DISABLE_CMDS = []
