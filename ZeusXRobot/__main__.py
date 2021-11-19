@@ -326,7 +326,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Powered by @VegetaRobot\nHere is the help for the *{}* module:\n".format(
+                "Bugs report @ZeusSupportChat\nHere is the help for the *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -378,9 +378,9 @@ def help_button(update, context):
 
 
 
-def vegeta_data_callback(update, context):
+def zeus_data_callback(update, context):
     query = update.callback_query
-    if query.data == "vegeta_":
+    if query.data == "zeus_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -388,12 +388,12 @@ def vegeta_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="vegeta_back")
+                    InlineKeyboardButton(text="Back", callback_data="zeus_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "vegeta_back":
+    elif query.data == "zeus_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -698,7 +698,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    data_callback_handler = CallbackQueryHandler(vegeta_data_callback, pattern=r"vegeta_")
+    data_callback_handler = CallbackQueryHandler(vegeta_data_callback, pattern=r"zeus_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
