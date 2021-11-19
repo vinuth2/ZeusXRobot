@@ -83,6 +83,7 @@ if ENV:
     WORKERS = int(os.environ.get('WORKERS', 8))
     BAN_STICKER = os.environ.get('BAN_STICKER',
                                  'CAADAgADOwADPPEcAXkko5EB3YGYAg')
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None) # From:- https://www.remove.bg/
     CASH_API_KEY = os.environ.get('CASH_API_KEY', None)
@@ -153,7 +154,7 @@ else:
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
-
+    BOT_USERNAME = Config.BOT_USERNAME
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
