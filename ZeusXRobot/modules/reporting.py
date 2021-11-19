@@ -1,10 +1,10 @@
 import html
 
-from VegetaRobot import (LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher)
-from VegetaRobot.modules.helper_funcs.chat_status import (user_admin,
+from ZeusXRobot import (LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher)
+from ZeusXRobot.modules.helper_funcs.chat_status import (user_admin,
                                                            user_not_admin)
-from VegetaRobot.modules.log_channel import loggable
-from VegetaRobot.modules.sql import reporting_sql as sql
+from ZeusXRobot.modules.log_channel import loggable
+from ZeusXRobot.modules.sql import reporting_sql as sql
 from telegram import (Chat, InlineKeyboardButton, InlineKeyboardMarkup,
                       ParseMode, Update)
 from telegram.error import BadRequest, Unauthorized
