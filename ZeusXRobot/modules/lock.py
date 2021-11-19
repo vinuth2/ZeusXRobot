@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import VegetaRobot.modules.sql.locks_sql as sql
-from VegetaRobot import dispatcher, DRAGONS, LOGGER
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.chat_status import (
+import ZeusXRobot.modules.sql.locks_sql as sql
+from ZeusXRobot import dispatcher, DRAGONS, LOGGER
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from VegetaRobot.modules.log_channel import loggable
-from VegetaRobot.modules.connection import connected
+from ZeusXRobot.modules.log_channel import loggable
+from ZeusXRobot.modules.connection import connected
 
-from VegetaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from ZeusXRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
