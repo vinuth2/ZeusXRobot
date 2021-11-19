@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from VegetaRobot import dispatcher, LOGGER, DRAGONS
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin
-from VegetaRobot.modules.helper_funcs.extraction import extract_text
-from VegetaRobot.modules.helper_funcs.filters import CustomFilters
-from VegetaRobot.modules.helper_funcs.misc import build_keyboard_parser
-from VegetaRobot.modules.helper_funcs.msg_types import get_filter_type
-from VegetaRobot.modules.helper_funcs.string_handling import (
+from ZeusXRobot import dispatcher, LOGGER, DRAGONS
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from ZeusXRobot.modules.helper_funcs.chat_status import user_admin
+from ZeusXRobot.modules.helper_funcs.extraction import extract_text
+from ZeusXRobot.modules.helper_funcs.filters import CustomFilters
+from ZeusXRobot.modules.helper_funcs.misc import build_keyboard_parser
+from ZeusXRobot.modules.helper_funcs.msg_types import get_filter_type
+from ZeusXRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from VegetaRobot.modules.sql import cust_filters_sql as sql
+from ZeusXRobot.modules.sql import cust_filters_sql as sql
 
-from VegetaRobot.modules.connection import connected
+from ZeusXRobot.modules.connection import connected
 
-from VegetaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from ZeusXRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
