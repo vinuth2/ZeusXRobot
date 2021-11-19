@@ -3,15 +3,15 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import VegetaRobot.modules.sql.notes_sql as sql
-from VegetaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from VegetaRobot.modules.helper_funcs.misc import (build_keyboard,
+import ZeusXRobot.modules.sql.notes_sql as sql
+from ZeusXRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from ZeusXRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from ZeusXRobot.modules.helper_funcs.misc import (build_keyboard,
                                                     revert_buttons)
-from VegetaRobot.modules.helper_funcs.msg_types import get_note_type
-from VegetaRobot.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
+from ZeusXRobot.modules.helper_funcs.msg_types import get_note_type
+from ZeusXRobot.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 from telegram import (MAX_MESSAGE_LENGTH, InlineKeyboardMarkup, Message,
                       ParseMode, Update, InlineKeyboardButton)
 from telegram.error import BadRequest
