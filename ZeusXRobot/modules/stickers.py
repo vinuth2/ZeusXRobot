@@ -11,8 +11,8 @@ from telegram import TelegramError, Update
 from telegram.ext import run_async, CallbackContext
 from telegram.utils.helpers import mention_html
 
-from VegetaRobot import dispatcher
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot import dispatcher
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
