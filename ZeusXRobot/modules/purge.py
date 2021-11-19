@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from VegetaRobot import telethn
-from VegetaRobot.modules.helper_funcs.telethn.chatstatus import (
+from ZeusXRobot import telethn
+from ZeusXRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages, user_is_admin)
 
 
