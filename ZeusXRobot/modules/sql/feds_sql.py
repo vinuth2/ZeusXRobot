@@ -1,7 +1,7 @@
 import threading
 
-from VegetaRobot import dispatcher
-from VegetaRobot.modules.sql import BASE, SESSION
+from ZeusXRobot import dispatcher
+from ZeusXRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 
