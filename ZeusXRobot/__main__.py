@@ -79,8 +79,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
  ───『[THE GOD OF ZEUS](https://telegra.ph/file/5f296f959250d7cd88b09.jpg)』───
-Hello! User,👋
-I am *Zeus*
+Hello! {},👋
+I am *{}*
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
 ┏━━━━━━━━━━━━━━━━━━━━━┓
 ┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
@@ -117,7 +117,7 @@ buttons = [
 ] 
 
 HELP_STRINGS = """
-Hey there, I'm *Zeus*!
+Hi there, I'm *Zeus*!
 To make me functional, make sure that i have enough rights in your group.
 Helpful commands:
 - /start: Starts me! You've probably already used this.
@@ -241,8 +241,11 @@ def start(update: Update, context: CallbackContext):
                 random.choice(STICKERS),
                 timeout=60,
             )
+            first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(context.bot.first_name),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -250,7 +253,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
-            GROUPSTART_IMG, caption= "*hey {},*\n*Zeus Here For You*\n*I'm Working* : {} ".format(
+            GROUPSTART_IMG, caption= "*{},*\n*Zeus Here For You*\n*I'm Working* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
