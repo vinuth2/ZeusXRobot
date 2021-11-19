@@ -5,14 +5,14 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from VegetaRobot import dispatcher, updater
-import VegetaRobot.modules.sql.nsfw_sql as sql
-from VegetaRobot.modules.log_channel import gloggable
+from ZeusXRobot import dispatcher, updater
+import ZeusXRobot.modules.sql.nsfw_sql as sql
+from ZeusXRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from VegetaRobot.modules.helper_funcs.filters import CustomFilters
-from VegetaRobot.modules.helper_funcs.chat_status import user_admin
+from ZeusXRobot.modules.helper_funcs.filters import CustomFilters
+from ZeusXRobot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
