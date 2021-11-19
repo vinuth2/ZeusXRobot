@@ -1,4 +1,4 @@
-from VegetaRobot import telethn as tbot
+from ZeusXRobot import telethn as tbot
 from ZeusXRobot.events import register
 import os
 import asyncio
