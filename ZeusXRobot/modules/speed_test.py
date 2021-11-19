@@ -1,7 +1,7 @@
 import speedtest
-from VegetaRobot import DEV_USERS, dispatcher
-from VegetaRobot.modules.disable import DisableAbleCommandHandler
-from VegetaRobot.modules.helper_funcs.chat_status import dev_plus
+from ZeusXRobot import DEV_USERS, dispatcher
+from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from ZeusXRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
