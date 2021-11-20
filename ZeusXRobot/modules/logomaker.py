@@ -11,7 +11,7 @@ from io import BytesIO
 from requests import get
 from telethon.tl.types import InputMessagesFilterPhotos
 
-from ZeusXRobot import OWNER_ID, SUPPORT_CHAT
+from ZeusXRobot import OWNER_ID, SUPPORT_CHAT, BOT_USERNAME
 from ZeusXRobot.events import register
 from ZeusXRobot import telethn
 from PIL import Image, ImageDraw, ImageFont
@@ -84,7 +84,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "zeus.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"**Made by @ZeusXRobot**")         
+    await telethn.send_file(event.chat_id, file=fname, caption = f"**Made by: {BOT_USERNAME}**")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
