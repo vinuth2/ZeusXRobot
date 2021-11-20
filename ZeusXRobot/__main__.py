@@ -87,7 +87,7 @@ sᴜʙᴍɪᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘs
 ɪ ᴡɪʟʟ ᴅᴇsᴛʀᴏʏ ᴇᴠɪʟs
 ᴀɴᴅ ʜᴀᴘᴘʏ ᴡɪᴛʜ ᴀ  ᴘᴇᴏᴘʟᴇs...
 
-──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』──"""
+──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
 STICKERS = (
       "CAACAgUAAxkDAAPFYZf3AAHvMDnsv5fKW0FDznfWud9MAAK7BAAC0IDAVHm5KdsrXQNdIgQ", #1
       "CAACAgUAAxkDAAPeYZf5ijOHr2J-HyzS0P2W-RoCOW8AAsUEAALQgMBUHYrrhZZd-ogiBA", #2
