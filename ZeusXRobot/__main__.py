@@ -78,7 +78,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-──『[GOD OF THUNDER](https://telegra.ph/file/3161d85311761fd746817.jpg)』──
+──『[GOD OF THUNDER](https://telegra.ph/file/4c33a90f7df190fd81763.jpg)』──
 
 *Hello User!!*
 [Zeus ᴋɪɴɢ ᴏғ ɢᴏᴅs](https://en.m.wikipedia.org/wiki/Zeus)
@@ -87,7 +87,7 @@ sᴜʙᴍɪᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘs
 ɪ ᴡɪʟʟ ᴅᴇsᴛʀᴏʏ ᴇᴠɪʟs
 ᴀɴᴅ ʜᴀᴘᴘʏ ᴡɪᴛʜ ᴀ  ᴘᴇᴏᴘʟᴇs...
 
-──『ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ』──"""
+──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』──"""
 STICKERS = (
       "CAACAgUAAxkDAAPFYZf3AAHvMDnsv5fKW0FDznfWud9MAAK7BAAC0IDAVHm5KdsrXQNdIgQ", #1
       "CAACAgUAAxkDAAPeYZf5ijOHr2J-HyzS0P2W-RoCOW8AAsUEAALQgMBUHYrrhZZd-ogiBA", #2
@@ -696,7 +696,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@ZeusSupportChat","[God ๖ۣۜZΞUS༻ Is Ready ⚡](https://telegra.ph/file/b0211a58361d855675051.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@ZeusSupportChat","[Zeus Is Ready ⚡](https://telegra.ph/file/b0211a58361d855675051.jpg)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
