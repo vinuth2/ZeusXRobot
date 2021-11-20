@@ -79,12 +79,10 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
  ───『[GOD OF THANDER](https://telegra.ph/file/5f296f959250d7cd88b09.jpg)』───
-*Hello! Users,*👋
-I am *Zeus*
-➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
-┏━━━━━━━━━━━━━━━━━━━━━┓
-┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
-┗━━━━━━━━━━━━━━━━━━━━━┛
+*𝐇𝐞𝐲 𝐈'𝐦 Zeus,*👋
+*𝐈 𝐀𝐦 𝐀 𝐆𝐫𝐞𝐞𝐤 𝐌𝐲𝐭𝐡𝐨𝐥𝐨𝐠𝐲 𝐆𝐨𝐝 𝐀𝐧𝐝 𝐈 𝐀𝐦 𝐓𝐡𝐞 𝐆𝐨𝐝 𝐎𝐟 𝐒𝐤𝐲*
+𝐈 𝐂𝐚𝐧 𝐄𝐚𝐬𝐢𝐥𝐲 𝐃𝐞𝐬𝐭𝐫𝐨𝐲 𝐄𝐯𝐢𝐥𝐬 𝐖𝐢𝐭𝐡 𝐌𝐲 𝐓𝐡𝐮𝐧𝐝𝐞𝐫 ⚡
+𝐒𝐨 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🌩️
 """
 STICKERS = (
       "CAACAgUAAxkDAAPFYZf3AAHvMDnsv5fKW0FDznfWud9MAAK7BAAC0IDAVHm5KdsrXQNdIgQ", #1
