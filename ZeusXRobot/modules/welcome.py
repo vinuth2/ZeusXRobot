@@ -17,8 +17,8 @@ from ZeusXRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from VegetaRobot.modules.log_channel import loggable
-from VegetaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from ZeusXRobot.modules.log_channel import loggable
+from ZeusXRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
