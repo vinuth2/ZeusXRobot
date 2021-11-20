@@ -78,8 +78,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*───『[GOD OF THUNDER](https://en.m.wikipedia.org/wiki/Zeus)』───*
-𝐇𝐞𝐲 𝐈'𝐦 *[Zeus](https://telegra.ph/file/f04c2af6c477eaa446c93.jpg),👋*
+───『[GOD OF THUNDER](https://en.m.wikipedia.org/wiki/Zeus)』───
+𝐇𝐞𝐲 𝐈'𝐦 [Zeus](https://telegra.ph/file/f04c2af6c477eaa446c93.jpg)*,👋*
 𝐈 𝐀𝐦 𝐀 𝐆𝐫𝐞𝐞𝐤 𝐌𝐲𝐭𝐡𝐨𝐥𝐨𝐠𝐲 𝐆𝐨𝐝 𝐀𝐧𝐝 𝐈 𝐀𝐦 𝐓𝐡𝐞 𝐆𝐨𝐝 𝐎𝐟 𝐒𝐤𝐲
 𝐈 𝐂𝐚𝐧 𝐄𝐚𝐬𝐢𝐥𝐲 𝐃𝐞𝐬𝐭𝐫𝐨𝐲 𝐄𝐯𝐢𝐥𝐬 𝐖𝐢𝐭𝐡 𝐌𝐲 𝐓𝐡𝐮𝐧𝐝𝐞𝐫 *⚡*
 𝐒𝐨 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🌩️
