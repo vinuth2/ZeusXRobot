@@ -224,9 +224,9 @@ def info(update: Update, context: CallbackContext):
         return
 
     rep = message.reply_text(
-        "<code>Connecting to Pegasus</code>", parse_mode=ParseMode.HTML)
+        "<code> <b> Connecting to Zeus <b> </code>", parse_mode=ParseMode.HTML)
 
-    text = (f"╒═══「<b> Pegasus DB Userinfo:</b> 」\n"
+    text = (f"╒═══「<b> Zeua DB Userinfo:</b> 」\n"
             f"ID: <code>{user.id}</code>\n"
             f"First Name: {html.escape(user.first_name)}")
 
@@ -541,7 +541,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "📜Info|bio"
+__mod_name__ = "📜Info/bio"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER, GIFID_HANDLER, INFO_HANDLER, SET_BIO_HANDLER, GET_BIO_HANDLER,
