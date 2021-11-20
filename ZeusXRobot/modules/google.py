@@ -278,10 +278,12 @@ async def apk(e):
 __mod_name__ = "🎒Tools"
 
 __help__ = """
- ❍ /google <text>*:* Perform a google search
- ❍ /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
- ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
- ❍ /reverse: Does a reverse image search of the media which it was replie.
+ ❍ '/ud' (text)*:* meaning of the word
+ ❍ `/wiki` (text)*:* search on wikipedia.
+ ❍ `/google` <text>*:* Perform a google search
+ ❍ `/img` <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
+ ❍ `/app` <appname>*:* Searches for an app in Play Store and returns its details.
+ ❍ `/reverse`: Does a reverse image search of the media which it was replie.
  
 *Zip a files And Unzip files*
  ❍ `/zip`: reply to a telegram file to compress it in .zip format
