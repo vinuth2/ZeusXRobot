@@ -267,7 +267,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> [Vegeta] <==="
+        app_details += "\n\n===> [Made by Zeus ] <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -284,14 +284,15 @@ __help__ = """
  ❍ /reverse: Does a reverse image search of the media which it was replie.
  
 *Zip a files And Unzip files*
- ❍ /zip: reply to a telegram file to compress it in .zip format
- ❍ /unzip: reply to a telegram file to decompress it from the .zip format.
+ ❍ `/zip`: reply to a telegram file to compress it in .zip format
+ ❍ `/unzip`: reply to a telegram file to decompress it from the .zip format.
  
  *hide a text and show hide a text*
- ❍ /encrypt - reply to (text) hide a text.
- ❍ /decrypt - reply to hide (text) showing hide text to normal text.
+ ❍ `/encrypt` - reply to (text) hide a text.
+ ❍ `/decrypt` - reply to hide (text) showing hide text to normal text.
   
-*Telegraph Uploader only upload 3 to 5 mb files*
- ❍ /telegraph: upload image or GIFs telegraph.
+*Telegraph Uploader Text & 5mb (image|gif|video)*
+ ❍ `/tm`: upload image or GIFs telegraph.
+ ❍ `/txt`: reply to text Upload telegraph.
    
 """
