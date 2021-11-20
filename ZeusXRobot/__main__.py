@@ -81,11 +81,9 @@ PM_START_TEXT = """
 ──『[GOD OF THUNDER](https://telegra.ph/file/4c33a90f7df190fd81763.jpg)』──
 
 *Hello User!!*
-[Zeus ᴋɪɴɢ ᴏғ ɢᴏᴅs](https://en.m.wikipedia.org/wiki/Zeus)
-
-sᴜʙᴍɪᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘs
-ɪ ᴡɪʟʟ ᴅᴇsᴛʀᴏʏ ᴇᴠɪʟs
-ᴀɴᴅ ʜᴀᴘᴘʏ ᴡɪᴛʜ ᴀ  ᴘᴇᴏᴘʟᴇs...
+𝐇𝐞𝐲 𝐈'𝐦 [๖ۣۜZΞUS༻](https://en.m.wikipedia.org/wiki/Zeus),👋
+𝐈 𝐀𝐦 𝐀 𝐆𝐫𝐞𝐞𝐤 𝐌𝐲𝐭𝐡𝐨𝐥𝐨𝐠𝐲 𝐆𝐨𝐝 
+𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐈 𝐖𝐢𝐥𝐥 𝐃𝐞𝐬𝐭𝐫𝐨𝐲 𝐄𝐯𝐢𝐥𝐬 𝐖𝐢𝐭𝐡 𝐌𝐲 𝐓𝐡𝐮𝐧𝐝𝐞𝐫...
 
 ──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
 STICKERS = (
