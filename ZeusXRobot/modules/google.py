@@ -278,7 +278,7 @@ async def apk(e):
 __mod_name__ = "🎒Tools"
 
 __help__ = """
- ❍ '/ud' (text)*:* meaning of the word
+ ❍ `/ud` (text)*:* meaning of the word
  ❍ `/wiki` (text)*:* search on wikipedia.
  ❍ `/google` <text>*:* Perform a google search
  ❍ `/img` <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
