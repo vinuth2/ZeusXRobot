@@ -78,7 +78,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
- ───『[THE GOD OF THANDER](https://telegra.ph/file/5f296f959250d7cd88b09.jpg)』───
+ ───『[GOD OF THANDER](https://telegra.ph/file/5f296f959250d7cd88b09.jpg)』───
 *Hello! Users,*👋
 I am *Zeus*
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
@@ -257,7 +257,7 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
+                  InlineKeyboardButton(text=" Support ", url=f"https:t.me/ZeusSupportChat"),
                   InlineKeyboardButton(text=" Updates ", url=f"t.me/ZeusUpdates"),
                   ]
                 ]
