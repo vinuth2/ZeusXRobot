@@ -78,10 +78,3 @@ def resize_image(image):
     im = Image.open(image)
     im.save(image, "PNG")
 
-
-__help__ = """
- ❍ /tm :Get Telegraph Link Of Replied Media
- ❍ /txt :Get Telegraph Link of Replied Text
-"""
-
-__mod_name__ = "Telegraph"
