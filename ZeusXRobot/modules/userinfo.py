@@ -271,16 +271,16 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is a 'Owner'."
+        text += "\n\n(owner) of the bot."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThe Power level of this person is 'S-Ranks'."
+        text += "\n\n(S-Rank) of the bot."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Power level of this person is 'A-Ranks'."
+        text += "\n\n(A-Rank) of the bot.."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Power level of this person is 'B-Ranks'."
+        text += "\n\n(B-Rank) of the bot."
         disaster_level_present = True
     elif user.id in TIGERS:
         text += "\n\nThe Power level of this person is 'tigers of zeus'."
@@ -290,7 +290,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/pegasusxteam/36">What is Ranks</a>]'.format(
+        text += ' \n[<a href="https://t.me/pegasusxteam/36">What is Ranks</a>]'.format(
             bot.username)
 
     try:
