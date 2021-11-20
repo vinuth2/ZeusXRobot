@@ -78,7 +78,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
- ───『[THE GOD OF ZEUS](https://telegra.ph/file/5f296f959250d7cd88b09.jpg)』───
+ ───『[THE GOD OF THANDER](https://telegra.ph/file/5f296f959250d7cd88b09.jpg)』───
 Hello! {},👋
 I am *{}*
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
@@ -241,11 +241,8 @@ def start(update: Update, context: CallbackContext):
                 random.choice(STICKERS),
                 timeout=60,
             )
-            first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(context.bot.first_name),),
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -253,7 +250,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
-            GROUPSTART_IMG, caption= "*{},*\n*Zeus Here For You*\n*I'm Working* : {} ".format(
+            GROUPSTART_IMG, caption= "*{},*\n*Zeus Now alive*\n*Working* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
@@ -340,7 +337,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Bugs report @ZeusSupportChat\nHere is the help for the *{}* module:\n".format(
+                "*Bugs report @ZeusSupportChat*\nHere is the help for the *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
