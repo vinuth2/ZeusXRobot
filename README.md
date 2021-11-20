@@ -35,5 +35,5 @@ The easiest way to deploy this Bot
 
 
 # 🗡️ Support
-<a href="https://t.me/ZeusSupportChat"><img src="https://img.shields.io/badge/Support 🎉-Telegram%20Group-blue.svg?logo=telegram"></a>
-<a href="https://t.me/ZeusUpdates"><img src="https://img.shields.io/badge/Updates 💥-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/ZeusSupportChat"><img src="https://img.shields.io/badge/ZeusSupport-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/ZeusUpdates"><img src="https://img.shields.io/badge/ZeusUpdates-Telegram%20Channel-blue.svg?logo=telegram"></a>
