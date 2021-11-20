@@ -79,8 +79,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
  ───『[THE GOD OF THANDER](https://telegra.ph/file/5f296f959250d7cd88b09.jpg)』───
-Hello! {},👋
-I am *{}*
+*Hello! Users,*👋
+I am *Zeus*
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
 ┏━━━━━━━━━━━━━━━━━━━━━┓
 ┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
@@ -96,9 +96,9 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="➕ Add Me ➕",
+                            text="➕ Add Zeus ➕",
                             url="t.me/ZeusXRobot?startgroup=true"),
-                       InlineKeyboardButton(text="⚡ZeusSupport", url="t.me/ZeusSupportchat"),
+                       InlineKeyboardButton(text="🦄Support", url="t.me/PegasusSupportofficial"),
                     ],
                    [
                        InlineKeyboardButton(text="🔐 Help ", callback_data="help_back"),
@@ -107,10 +107,10 @@ buttons = [
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🗯 Support",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="⚡ZeusSupport",
+                             url=f"https://t.me/ZeusSupportChat"),
                        InlineKeyboardButton(
-                             text="📢 Updates",
+                             text="⚡ZeusUpdates",
                              url="https://t.me/ZeusUpdates"
          ),
     ],
