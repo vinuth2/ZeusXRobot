@@ -220,3 +220,5 @@ BOT_ID = bottie.id
 BOT_USERNAME = bottie.username
 BOT_NAME = bottie.first_name
 BOT_MENTION = bottie.mention
+
+BOT_USERNAME= "t.me/ZeusXRobot"
