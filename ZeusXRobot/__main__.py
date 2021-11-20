@@ -257,8 +257,8 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Support ", url=f"https:t.me/ZeusSupportChat"),
-                  InlineKeyboardButton(text=" Updates ", url=f"t.me/ZeusUpdates"),
+                  InlineKeyboardButton(text=" Support ", url="t.me/ZeusSupportChat"),
+                  InlineKeyboardButton(text=" Updates ", url="t.me/ZeusUpdates"),
                   ]
                 ]
             ),
