@@ -140,7 +140,7 @@ def gban(update: Update, context: CallbackContext):
 
         return
 
-    message.reply_text("Gban Done!")
+    message.reply_text("ha gbanning...")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
