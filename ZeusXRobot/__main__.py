@@ -79,9 +79,10 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ──『[GOD OF THUNDER](https://telegra.ph/file/3161d85311761fd746817.jpg)』──
+
 *Hello User!!*
-[ᴢᴇᴜs ᴋɪɴɢ ᴏғ ɢᴏᴅs](https://en.m.wikipedia.org/wiki/Zeus)\n
-sᴜʙᴍɪᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘs...\n
+[ᴢᴇᴜs ᴋɪɴɢ ᴏғ ɢᴏᴅs](https://en.m.wikipedia.org/wiki/Zeus)
+sᴜʙᴍɪᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘs...
 ɪ ᴡɪʟʟ ᴅᴇsᴛʀᴏʏ ᴇᴠɪʟs..."""
 STICKERS = (
       "CAACAgUAAxkDAAPFYZf3AAHvMDnsv5fKW0FDznfWud9MAAK7BAAC0IDAVHm5KdsrXQNdIgQ", #1
