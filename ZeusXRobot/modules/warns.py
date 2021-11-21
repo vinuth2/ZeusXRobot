@@ -96,7 +96,7 @@ def warn(user: User,
     else:
         keyboard = InlineKeyboardMarkup([[
             InlineKeyboardButton(
-                    text="⚠Rules", url=f"t.me/{bot.username}?start={chat_id}"),
+                    text="⚠Rules", url=f"t.me/{BOT_USERNAME}?start={chat_id}"),
           InlineKeyboardButton(
                 "🔘 Remove warn", callback_data="rm_warn({})".format(user.id))
         ]])
