@@ -116,7 +116,7 @@ buttons = [
                              url=f"https://t.me/ZeusUpdates"),
                      ],
                     [
-                    InlineKeyboardButton(text="🔐 Open commads ", callback_data="help_back"
+                    InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
          ),
     ],
 ] 
