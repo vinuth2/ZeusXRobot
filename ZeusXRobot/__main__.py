@@ -116,7 +116,7 @@ buttons = [
                              url=f"https://t.me/ZeusUpdates"),
                      ],
                     [
-                    InlineKeyboardButton(text="🔐 open commads ", callback_data="help_back"
+                    InlineKeyboardButton(text="🔐 Open commads ", callback_data="help_back"
          ),
     ],
 ] 
@@ -421,17 +421,20 @@ def zeus_data_callback(update, context):
     
     elif query.data == "zeus_credit":
         query.message.edit_text(
-            text=f"*Credit For Zeus\n repo & Devlopers*\n"
+            text=f"**Credit For Zeus**\n **Repo & Devlopers**\n"
             f"\nHere Some Developers Helping in Making The @ZeusXRoot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
                     InlineKeyboardButton(text="⚡CT_PRO⚡", url="t.me/Ctzfamily"),
-                    InlineKeyboardButton(text="🙏Credita", url="github.com/ctzfamily/vegetaRobot"),
+                    InlineKeyboardButton(text="⚡AASF⚡", url="t.me/AASFCYBERKING"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="sophia_basichelp"),
+                    InlineKeyboardButton(text="⚡Repo⚡", url="github.com/ctzfamily/vegetaRobot"),
+                 ],
+                  [
+                    InlineKeyboardButton(text="⬅ Back", callback_data="vegeta_back"),
                  
                  ]
                 ]
