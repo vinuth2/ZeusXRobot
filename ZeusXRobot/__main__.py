@@ -103,7 +103,7 @@ buttons = [
                        InlineKeyboardButton(text="🦄Support", url="t.me/PegasusSupportofficial"),
                     ],
                    [
-                       InlineKeyboardButton(text="🙏Credita ", callback_data="zeus_credit"),
+                       InlineKeyboardButton(text="🙏Credit ", callback_data="zeus_credit"),
                        InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
