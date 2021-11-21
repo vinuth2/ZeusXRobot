@@ -421,7 +421,7 @@ def zeus_data_callback(update, context):
     
     elif query.data == "zeus_credit":
         query.message.edit_text(
-            text=f"**Credit For Zeus**\n **Repo & Devlopers**\n"
+            text=f"Credit For Zeus. \n  Repo & Devlopers.\n"
             f"\nHere Some Developers Helping in Making The @ZeusXRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -431,10 +431,10 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="⚡AASF⚡", url="t.me/AASFCYBERKING"),
                  ],
                  [
-                    InlineKeyboardButton(text="⚡Repo⚡", url="github.com/ctzfamily/vegetaRobot"),
+                    InlineKeyboardButton(text="⚡Repositorie⚡", url="github.com/ctzfamily/vegetaRobot"),
                  ],
                   [
-                    InlineKeyboardButton(text="⬅ Back", callback_data="vegeta_back"),
+                    InlineKeyboardButton(text="⬅ Back", callback_data="veus_back"),
                  
                  ]
                 ]
