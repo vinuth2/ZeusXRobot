@@ -3,7 +3,6 @@ import re
 from typing import Optional
 
 import telegram
-from ZeusXRobot import BOT_USERNAME
 from ZeusXRobot import TIGERS, WOLVES, dispatcher
 from ZeusXRobot.modules.disable import DisableAbleCommandHandler
 from ZeusXRobot.modules.helper_funcs.chat_status import (bot_admin,
@@ -97,7 +96,7 @@ def warn(user: User,
     else:
         keyboard = InlineKeyboardMarkup([[
             InlineKeyboardButton(
-                    text="⚠Rules", url=f"t.me/{BOT_USERNAME}?start={chat_id}"),
+                    text="⚠Rules", url=f"t.me/ZeusXRobot?start={chat_id}"),
           InlineKeyboardButton(
                 "🔘 Remove warn", callback_data="rm_warn({})".format(user.id))
         ]])
