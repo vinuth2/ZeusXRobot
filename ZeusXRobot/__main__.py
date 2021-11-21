@@ -94,9 +94,9 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="➕ Add Zeus ➕",
+                            text="☑️ Add Zeus ☑️",
                             url="t.me/ZeusXRobot?startgroup=true"),
-                       InlineKeyboardButton(text="🦄Support", url="t.me/PegasusSupportofficial"),
+                       InlineKeyboardButton(text="🦄 Support", url="t.me/PegasusSupportofficial"),
                     ],
                    [
                        InlineKeyboardButton(text="🙏Credit ", callback_data="zeus_credit"),
