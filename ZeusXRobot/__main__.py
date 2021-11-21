@@ -103,7 +103,7 @@ buttons = [
                        InlineKeyboardButton(text="🦄Support", url="t.me/PegasusSupportofficial"),
                     ],
                    [
-                       InlineKeyboardButton(text="🔐 Help ", callback_data="help_back"),
+                       InlineKeyboardButton(text="🙏Credita ", callback_data="zeus_credit"),
                        InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
@@ -113,7 +113,10 @@ buttons = [
                              url=f"https://t.me/ZeusSupportChat"),
                        InlineKeyboardButton(
                              text="⚡ZeusUpdates",
-                             url="https://t.me/ZeusUpdates"
+                             url="https://t.me/ZeusUpdates),
+                     ],
+                    [
+                    InlineKeyboardButton(text="🔐 open commads ", callback_data="help_back"),
          ),
     ],
 ] 
@@ -414,6 +417,26 @@ def zeus_data_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
+        
+elif query.data == "zeus_credit":
+        query.message.edit_text(
+            text=f"*Credit For Zeus\n repo & Devlopers*\n"
+            f"\nHere Some Developers Helping in Making The @ZeusXRoot",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="⚡CT_PRO⚡", url="t.me/Ctzfamily"),
+                    InlineKeyboardButton(text="🙏Credita", url="github.com/ctzfamily/vegetaRobot"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="sophia_basichelp"),
+                 
+                 ]
+                ]
+            ),
+        )
+
 
 
 
