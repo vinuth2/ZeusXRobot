@@ -417,8 +417,7 @@ def zeus_data_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-        
-elif query.data == "zeus_credit":
+        elif query.data == "zeus_credit":
         query.message.edit_text(
             text=f"*Credit For Zeus\n repo & Devlopers*\n"
             f"\nHere Some Developers Helping in Making The @ZeusXRoot",
