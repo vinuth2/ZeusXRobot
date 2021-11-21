@@ -55,16 +55,20 @@ __help__ = """
 *Special modules*
 
 ──「 *Owner only*: 」──
--> /banall
+-> `/banall`
 Ban all members from a chat
 ──「 *Sudo only*: 」──
--> /snipe <chatid> <string>
+-> `/snipe` <chatid> <string>
 Make me send a message to a specific chat.
 
 ──「 *Admin only*: 」──
--> /tagall or @all
-/tagall cmd for tag group members for reply message.
+-> `/tagall` or @all
+`/tagall` cmd for tag group members for reply message.
 @all [text] for tagall members.
+
+──「 *Admin only*: 」──
+-> `/zombies`*:* see how meany deleted acc in chat.
+  `/zombies clean`*:* remove a deleted acc in chat.
 """
 
 __mod_name__ = "👻Special"
