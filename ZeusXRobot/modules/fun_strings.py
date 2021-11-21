@@ -22,18 +22,18 @@ GBAM_REASON = (
     "no respect",
     "chuthiya bhaiya",
     "Kundu Pusanika",
-    "Manda Paila",
-    "Savu la Nee Poi savu",
-    "Modi tu poda",
-    "Mundam",
-    "Arivuktha mudnam",
-    "Korangu",
+    "gay being gay",
+    "using gay pack trying become a gay",
+    "big dick more than sucks a bots",
+    "see rules mother tickers",
+    "idk. wtf he is mom sai",
+    "fucking with gay bots",
     "Korean gays",
-    "Potta",
-    "Mairu",
+    "buying a gays",
+    "mater girls",
 )
 
-DECIDE = ("Yes.", "IDK.", "Maybe.", "No.")
+DECIDE = ("Yes.", "Maybe.", "No.")
 
 TRUTH = (
     "Do you pick your nose?",
