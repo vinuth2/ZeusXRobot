@@ -422,7 +422,7 @@ def zeus_data_callback(update, context):
     elif query.data == "zeus_credit":
         query.message.edit_text(
             text=f"**Credit For Zeus**\n **Repo & Devlopers**\n"
-            f"\nHere Some Developers Helping in Making The @ZeusXRoot",
+            f"\nHere Some Developers Helping in Making The @ZeusXRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
