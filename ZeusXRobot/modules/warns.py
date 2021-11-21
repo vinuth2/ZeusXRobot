@@ -3,6 +3,7 @@ import re
 from typing import Optional
 
 import telegram
+from ZeusXRobot import BOT_USERNAME
 from ZeusXRobot import TIGERS, WOLVES, dispatcher
 from ZeusXRobot.modules.disable import DisableAbleCommandHandler
 from ZeusXRobot.modules.helper_funcs.chat_status import (bot_admin,
