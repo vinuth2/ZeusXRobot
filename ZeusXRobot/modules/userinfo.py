@@ -226,7 +226,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text(
         "<code> Connecting to Zeus </code>", parse_mode=ParseMode.HTML)
 
-    text = (f"╒═══「<b> Zeua DB Userinfo:</b> 」\n"
+    text = (f"╒═══「<b> Zeus DB Userinfo:</b> 」\n"
             f"ID: <code>{user.id}</code>\n"
             f"First Name: {html.escape(user.first_name)}")
 
