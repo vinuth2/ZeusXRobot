@@ -94,12 +94,11 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ Add Zeus ☑️",
+                            text="☑️ ADD GOD ZEUS ☑️",
                             url="t.me/ZeusXRobot?startgroup=true"),
-                       InlineKeyboardButton(text="🦄 Support", url="t.me/PegasusSupportofficial"),
                     ],
                    [
-                       InlineKeyboardButton(text="🙏Credit ", callback_data="zeus_credit"),
+                       InlineKeyboardButton(text="❤Credit", callback_data="zeus_credit"),
                        InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
@@ -430,6 +429,10 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="⚡Repositorie⚡", url="github.com/ctzfamily/vegetaRobot"),
                  ],
                   [
+                    InlineKeyboardButton(text="Support", url="t.me/gexaSupport"),
+                    InlineKeyboardButton(text="Updates", url="t.me/gexaUpdates"),
+                 ],
+                 [
                     InlineKeyboardButton(text="⬅ Back", callback_data="zeus_back"),
                  
                  ]
