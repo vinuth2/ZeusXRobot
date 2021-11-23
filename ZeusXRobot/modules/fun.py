@@ -136,7 +136,7 @@ GOODMORNING_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodmorning
 GOODNIGHT_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodnight|good night)"), goodnight, friendly="goodnight")
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 GBUN_HANDLER = CommandHandler("gbun", gbun)
-PAT_HANDLER = CommandHandler("pat", pat)
+PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 GBAM_HANDLER = CommandHandler("gbam", gbam)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
