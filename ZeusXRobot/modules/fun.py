@@ -114,20 +114,20 @@ def pat(update: Update, context: CallbackContext):
     pat_type = random.choice(("Text", "Gif", "Sticker"))
     if pat_type == "Gif":
         try:
-            temp = random.choice(fun_strings.PAT_GIFS)
+            temp = random.choice(fun.PAT_GIFS)
             reply_to.reply_animation(temp)
         except BadRequest:
             pat_type = "Text"
 
     if pat_type == "Sticker":
         try:
-            temp = random.choice(fun_strings.PAT_STICKERS)
+            temp = random.choice(fun.PAT_STICKERS)
             reply_to.reply_sticker(temp)
         except BadRequest:
             pat_type = "Text"
 
     if pat_type == "Text":
-        temp = random.choice(fun_strings.PAT_TEMPLATES)
+        temp = random.choice(fun.PAT_TEMPLATES)
         reply = temp.format(user1=user1, user2=user2)
         reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
                                                                          
