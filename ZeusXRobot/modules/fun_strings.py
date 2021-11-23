@@ -139,7 +139,32 @@ DARE = (
     "Set your crush’s picture as your dp.",
     )
 
+PAT_TEMPLATES = (
+    "{user1} pats {user2} on the head.",
+    "*gently rubs {user2}'s head*.",
+    "*{user1} mofumofus {user2}'s head*",
+    "*{user1} messes up {user2}'s head*",
+    "*{user1} intensly rubs {user2}'s head*",
+    "*{user2}'s waifu pats their head*",
+    "*{user2}'s got free headpats*",
+    "No pats for {user2}!",
+    
+)
 
+PAT_GIFS = (
+    "CgACAgQAAxkBAALRX19Xs7tBdOH1gQwS_rglVRkTbgVYAAKEAgACmQn9UWlyGa_xy9_aGwQ",
+    "CgACAgEAAxkBAALRYF9Xs8EnhsDfDpld3ILoqTbzDmwxAAJFAAOJxjlHECanwn69E5QbBA", 
+    "CgACAgQAAxkBAAO5X7olTkYuRTw1AV__6mFehORkP4QAAiMCAAI3KIxSjBqOTuo4xf0eBA", 
+    "CgACAgQAAxkBAAO6X7olTklDbgs9nr5bNbM9xy0uunUAAmACAAL1G4xSKOH5wmDvxy4eBA", 
+    "CgACAgQAAxkBAAIViWDBew94TiaL_c9HyX0xpUY8wFy2AAJKAgACMU80Urc2Hvh_WMDeHwQ",
+    "CgACAgQAAxkBAAO7X7olTq_mAur7bsieTD5QnyQ06rUAAlwCAAINjoRSWyAJKJ9n2moeBA") 
+
+PAT_STICKERS = (
+    "CAACAgQAAxkBAALRWV9Xs4HH0XaXfhZe-jWaZoXfs-IsAAJYAwACdDgSEHYOt4KvL02oGwQ",
+    "CAACAgQAAxkBAALRXF9Xs6XmIeDbnoL1wiDky0TdX-CvAAKKAQAC1TMzC9A3CtiT2rqVGwQ", 
+    "CAACAgQAAxkBAAPCX7ol0GGF-58u9AfabFk_16ehVXEAArUAA9UzMwuz7SpKK9TonB4E",
+    "CAACAgQAAxkBAAPDX7ol2ixI5WdJ48h8rQYbc__6KisAAt8AA9UzMwusEnTVQ5yoAh4E", 
+    "CAACAgQAAxkBAAPEX7ol55uzT-EkbHOkA-_94MiMcBgAAvAAA9UzMws7KHpoG8wBjh4E") 
 
 
     
