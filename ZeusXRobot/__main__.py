@@ -429,10 +429,10 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="⚡Repositorie⚡", url="github.com/ctzfamily/vegetaRobot"),
                  ],
                   [
-                    InlineKeyboardButton(text="Support", url="t.me/gexaSupport"),
-                    InlineKeyboardButton(text="Updates", url="t.me/gexaUpdates"),
+                    InlineKeyboardButton(text="📊Support", url="t.me/UnitedSupport"),
+                    InlineKeyboardButton(text="📊Updates", url="t.me/PegasusUpdates"),
                  ],
-                 [
+                 
                     InlineKeyboardButton(text="⬅ Back", callback_data="zeus_back"),
                  
                  ]
