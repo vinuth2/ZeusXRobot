@@ -454,4 +454,6 @@ Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
   🔹 `/reverse`*:* Does a reverse image search of the media which it was replied to.
   🔹 `/q`*:*reply for message get sticker type.
   🔹 `/plet [text]`*:* make ur text sticker.
+  🔹 `/carbon` reply to the message make a carbon
+Usage: Beautify your code using carbon.now.sh
 """
