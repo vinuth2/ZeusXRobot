@@ -449,11 +449,18 @@ async def cb_handler(client: pgram, query: CallbackQuery):
         elif query.data == "rmbgsticker":
             await removebg_sticker(client, query.message)
 
-
-__mod_name__ = "Image Editor"
-__help__ = f"""
-{BOT_NAME} have some advanced image editing tools inbuilt
+__mod_name__ = "🖼Editor"
+__help__ = """
+@ZeusXRobot have some advanced image editing tools inbuilt
 Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
-  ➢ `/edit [reply to image]`*:* Open the image editor
-  ➢ `/rmbg [REPLY]`*:* Revove BG of replied image/sticker.
+  🔹 `/edit [reply to image]`*:* Open the image editor
+  🔹 `/rmbg [REPLY]`*:* Revove BG of replied image/sticker.
+  🔹 `/reverse`*:* Does a reverse image search of the media which it was replied to.
+  🔹 `/q`*:*reply for message get sticker type.
+  🔹 `/plet [text]`*:* make ur text sticker.
+  🔹 `/carbon` reply to the message make a carbon
+Usage: Beautify your code using carbon.now.sh
 """
+
+
+
