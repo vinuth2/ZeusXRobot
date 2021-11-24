@@ -188,6 +188,11 @@ if not SPAMWATCH_API:
 else:
     sw = spamwatch.Client(SPAMWATCH_API)
 
+  #install aiohttp session
+print("[ZeusXRobot]: Initializing AIOHTTP Session")
+aiohttpsession = ClientSession()    
+      
+    
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("KURUMIBOT", API_ID, API_HASH)
 pgram = Client("ZeusXRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
