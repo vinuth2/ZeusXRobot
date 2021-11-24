@@ -1,8 +1,8 @@
-# Pokedex Module Credits Pranav Ajay 🐰Github = Red-Aura 🐹 Telegram= @madepranav
+
 
 import aiohttp
 from pyrogram import filters
-from AmeliaRobot import pgram as asuna
+from ZeusXRobot import pgram as asuna
 
 @asuna.on_message(filters.command('pokedex'))
 async def PokeDex(_, message):
