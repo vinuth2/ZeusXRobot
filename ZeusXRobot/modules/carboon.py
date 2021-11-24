@@ -25,10 +25,4 @@ async def carbon_func(_, message):
     await m.delete()
     carbon.close()
 
-__help__ = """
-  🔹 `/carbon` <text> [or reply]
-  
-Usage: Beautify your code using carbon.now.sh
-"""
-
-__mod_name__ = "CARBON🏷️"
+#ZeusXRobot
