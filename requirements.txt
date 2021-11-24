@@ -65,3 +65,4 @@ opencv-python-headless #imageedit
 secureme #encrypt
 aiofiles
 aiohttp>=2.2.5
+wget
