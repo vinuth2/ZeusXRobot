@@ -329,7 +329,7 @@ def capture_err(func):
                 ),
             )
             for x in error_feedback:
-                await pbot.send_message(SUPPORT_CHAT, x)
+                await pgram.send_message(SUPPORT_CHAT, x)
             raise err
 
     return capture
