@@ -29,7 +29,7 @@ from ZeusXRobot.resources.ImageEditor.edit_2 import (  # pylint:disable=import-e
     sepia_mode,
     sticker,
 )
-from ZeusXRobot.utils.resources.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from ZeusXRobot.resources.ImageEditor.edit_3 import (  # pylint:disable=import-error
     black_border,
     blue_border,
     green_border,
