@@ -98,7 +98,7 @@ buttons = [
                             url="t.me/ZeusXRobot?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="❤Credit", callback_data="zeus_credit"),
+                       InlineKeyboardButton(text="❤info", callback_data="zeus_credit"),
                        InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
@@ -424,7 +424,7 @@ def zeus_data_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="⚡CT_PRO⚡", url="t.me/Ctzfamily"),
-                    InlineKeyboardButton(text="⚡AASF⚡", url="t.me/AASFCYBERKING"),
+                    InlineKeyboardButton(text="🔄Go Inline", switch_inline_query_current_chat=""),
                  ],
                  [
                     InlineKeyboardButton(text="⚡Repositorie⚡", url="github.com/ctzfamily/vegetaRobot"),
