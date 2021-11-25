@@ -48,7 +48,7 @@ async def paste(content):
 async def inline_help_func(__HELP__):
     buttons = InlineKeyboard(row_width=2)
     buttons.add(
-        InlineKeyboardButton("❗ More Help.", url=f"t.me/ZeusXRobot?start=start"),
+        InlineKeyboardButton("🔐 More Help.", url=f"t.me/ZeusXRobot?start=help"),
         InlineKeyboardButton("🔄 Go Inline", switch_inline_query_current_chat=""),
     )
     answerss = [
@@ -63,51 +63,14 @@ async def inline_help_func(__HELP__):
     answerss = await alive_function(answerss)
     return answerss
 
-async def youtube_func(answers, text):
-    results = await arq.youtube(text)
-    if not results.ok:
-        answers.append(
-            InlineQueryResultArticle(
-                title="Error",
-                description=results.result,
-                input_message_content=InputTextMessageContent(
-                    results.result
-                ),
-            )
-        )
-        return answers
-    results = results.result[0:48]
-    for i in results:
-        buttons = InlineKeyboard(row_width=1)
-        video_url = f"https://youtube.com{i.url_suffix}"
-        buttons.add(InlineKeyboardButton("Watch", url=video_url))
-        caption = f"""
-**Title:** {i.title}
-**Views:** {i.views}
-**Channel:** {i.channel}
-**Duration:** {i.duration}
-**Uploaded:** {i.publish_time}
-**Description:** {i.long_desc}"""
-        description = f"{i.views} | {i.channel} | {i.duration} | {i.publish_time}"
-        answers.append(
-            InlineQueryResultArticle(
-                title=i.title,
-                thumb_url=i.thumbnails[0],
-                description=description,
-                input_message_content=InputTextMessageContent(
-                    caption, disable_web_page_preview=True
-                ),
-                reply_markup=buttons,
-            )
-        )
-    return answers
+
 
 async def alive_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("❗ Main Bot", url="https://t.me/ZeusXRobot"),
+        InlineKeyboardButton("🔐 Main Bot", url="https://t.me/ZeusXRobot?start=help"),
         InlineKeyboardButton("🔄 Go Inline", switch_inline_query_current_chat=""),
     )
 
