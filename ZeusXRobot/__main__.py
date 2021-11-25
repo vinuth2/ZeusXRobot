@@ -98,7 +98,7 @@ buttons = [
                             url="t.me/ZeusXRobot?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="❤info", callback_data="zeus_credit"),
+                       InlineKeyboardButton(text="❤info", callback_data="zeus_info"),
                        InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
@@ -415,9 +415,10 @@ def zeus_data_callback(update, context):
         )
     
     
-    elif query.data == "zeus_credit":
+    elif query.data == "zeus_info":
         query.message.edit_text(
             text=f"Credit For Zeus. \n  Repo & Devlopers.\n"
+            f"click the 🔄go inline button enjoy.
             f"\nHere Some Developers Helping in Making The @ZeusXRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
