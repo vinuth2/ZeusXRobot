@@ -402,7 +402,7 @@ def stats(update: Update, context: CallbackContext):
     process = subprocess.Popen(
         "neofetch --stdout", shell=True, text=True, stdout=subprocess.PIPE)
     output = process.communicate()[0]
-    stats = "<b>📊 Zeus Current stats:</b>\n\n <b> Support - @zeusSupportChat</b> \n <b> Updates - @ZeusUpdates </b>\n" + "\n" + output + "\n".join(
+    stats = "<b>📊 Zeus Current stats:</b>\n" + "\n" + output + "\n".join(
         [mod.__stats__() for mod in STATS])
     result = re.sub(r'(\d+)', r'<code>\1</code>', stats)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
