@@ -78,8 +78,18 @@ def gbam(update, context):
 def decide(update: Update, context: CallbackContext):
     reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
     reply_text(random.choice(fun.DECIDE))
-    
-    
+  
+@run_async
+def insult(update, context):
+    context.bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
+    message = update.effective_message
+    if message.reply_to_message:
+      message.reply_to_message.reply_text(random.choice(fun.SFW_STRINGS))
+    else:
+      message.reply_text(random.choice(fun.SFW_STRINGS))
+
+
+
 @run_async
 @typing_action
 def truth(update, context):
@@ -140,9 +150,11 @@ PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 GBAM_HANDLER = CommandHandler("gbam", gbam)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
+INSULT = DisableAbleCommandHandler("insult", insult)
 
 dispatcher.add_handler(GOODMORNING_HANDLER)
 dispatcher.add_handler(GOODNIGHT_HANDLER)
+dispatcher.add_handler(INSULT_HANDLER)
 dispatcher.add_handler(GBAM_HANDLER)
 dispatcher.add_handler(GBUN_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
