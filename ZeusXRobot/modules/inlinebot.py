@@ -618,7 +618,7 @@ async def inline_query_handler(client, query):
                 Time Zones:- {tom}
                 Top Level Domain:- {lanester}
                 wikipedia:- {wiki}</b>
-                Gathered By @GilbertAnimeBot.</b>
+                Gathered By @ZeusXRobot.</b>
                 """
             results.append(
                 InlineQueryResultArticle(
