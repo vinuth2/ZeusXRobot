@@ -29,7 +29,12 @@ from ZeusXRobot.modules.helper_funcs.chat_status import sudo_plus
 from ZeusXRobot.modules.helper_funcs.extraction import extract_user
 from ZeusXRobot import telethn as ZeusXRobotTelethonClient, TIGERS, DRAGONS, DEMONS
 
-
+def get_readable_time(seconds: int) -> str:
+    count = 0
+    ping_time = ""
+    time_list = []
+    time_suffix_list = ["s", "m", "h", "days"]
+    
 def no_by_per(totalhp, percentage):
     """
     rtype: num of `percentage` from total
