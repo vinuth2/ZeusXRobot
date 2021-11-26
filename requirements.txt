@@ -2,7 +2,6 @@ future
 faker
 motor
 PyDictionary==2.0.1
-psutil==5.8.0
 emoji
 lxml
 beautifulsoup4
@@ -74,3 +73,4 @@ secureme #encrypt
 aiofiles
 aiohttp>=2.2.5
 wget
+psutil==5.8.0
