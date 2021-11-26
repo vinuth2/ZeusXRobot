@@ -20,7 +20,7 @@ from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
 from ZeusXRobot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
-                          INFOPIC, dispatcher,StartTime, sw)
+                          INFOPIC, dispatcher,StartTime,SUPPORT_CHAT,sw)
 from ZeusXRobot.__main__ import STATS, TOKEN, USER_INFO
 import ZeusXRobot.modules.sql.userinfo_sql as sql
 from ZeusXRobot.modules.disable import DisableAbleCommandHandler
