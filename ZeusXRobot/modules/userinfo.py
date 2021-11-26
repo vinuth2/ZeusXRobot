@@ -453,9 +453,8 @@ def stats(update, context):
             + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/pegasusUpdates)\n\n"
            + "\n╘══「 by ⚡CT_PRO⚡ 」\n", parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(  
              [ InlineKeyboardButton( text="Support", url=f"https://t.me/ZeusSupportChat"), 
-               InlineKeyboardButton( text="Updates", url="https://t.me/ZeusUpdates"), 
-          
-          disable_web_page_preview=True, ) 
+               InlineKeyboardButton( text="Updates", url="https://t.me/ZeusUpdates")
+            disable_web_page_preview=True, ) 
         
         except BaseException: 
           update.effective_message.reply_text( ( ( ( "\n*Bot statistics*:\n" + "\n".join(mod.__stats__() for mod in STATS) ) + "\n\n \n\n" ) + "╘══「 by [⚡CT_PRO⚡」\n" ), parse_mode=ParseMode.MARKDOWN, 
