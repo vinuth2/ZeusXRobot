@@ -21,7 +21,7 @@ GBAM_REASON = (
     "fuck of topic",
     "no respect",
     "chuthiya bhaiya",
-    "Kundu Pusanika",
+    "mother likely chuthiya",
     "gay being gay",
     "using gay pack trying become a gay",
     "big dick more than sucks a bots",
@@ -34,6 +34,24 @@ GBAM_REASON = (
 )
 
 DECIDE = ("Yes.", "Maybe.", "No.")
+
+ABUSE_STRINGS = (
+    "Fuck off",
+    "Stfu go fuck yourself",
+    "Ur mum gey",
+    "Ur dad lesbo",
+    "Bsdk",
+    "Nigga",
+    "Ur granny tranny",
+    "you noob",
+    "Relax your Rear,ders nothing to fear,The Rape train is finally here",
+    "Stfu bc",
+    "Stfu and Gtfo U nub",
+    "GTFO bsdk",
+    "CUnt",
+    " Gay is here",
+    "Ur dad gey bc ",
+)
 
 TRUTH = (
     "Do you pick your nose?",
