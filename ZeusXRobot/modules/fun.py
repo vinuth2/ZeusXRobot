@@ -86,7 +86,17 @@ def insult(update, context):
     if message.reply_to_message:
       message.reply_to_message.reply_text(random.choice(fun.SFW_STRINGS))
     else:
-      message.reply_text(random.choice(fun.SFW_STRINGS))
+      message.reply_text(random.choice(fun.SFW_STRINGS)) 
+    
+    
+@run_async
+def abuse(update, context):
+    context.bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
+    message = update.effective_message
+    if message.reply_to_message:
+      message.reply_to_message.reply_text(random.choice(fun.ABUSE_STRINGS))
+    else:
+      message.reply_text(random.choice(fun.ABUSE_STRINGS))
 
 @run_async
 @typing_action
@@ -149,10 +159,12 @@ GBAM_HANDLER = CommandHandler("gbam", gbam)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
+ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 
 dispatcher.add_handler(GOODMORNING_HANDLER)
 dispatcher.add_handler(GOODNIGHT_HANDLER)
 dispatcher.add_handler(INSULT_HANDLER)
+dispatcher.add_handler(ABUSE_HANDLER)
 dispatcher.add_handler(GBAM_HANDLER)
 dispatcher.add_handler(GBUN_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
