@@ -24,7 +24,7 @@ from ZeusXRobot.modules.sql.afk_sql import is_afk, check_afk_status
 from ZeusXRobot.modules.sql.users_sql import get_user_num_chats
 from ZeusXRobot.modules.helper_funcs.chat_status import sudo_plus
 from ZeusXRobot.modules.helper_funcs.extraction import extract_user
-from ZeusXRobot import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
+from ZeusXRobot import telethn as ZeusXRobotTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -151,7 +151,7 @@ def get_id(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.HTML)
 
 
-@SaitamaTelethonClient.on(
+@ZeusXRobotTelethonClient.on(
     events.NewMessage(
         pattern='/ginfo ',
         from_users=(TIGERS or []) + (DRAGONS or []) + (DEMONS or [])))
