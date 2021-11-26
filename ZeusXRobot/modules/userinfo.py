@@ -3,7 +3,9 @@ import re
 import os
 import requests
 import subprocess
+import time
 
+from psutil import cpu_percent, virtual_memory, disk_usage, boot_time
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 from telethon import events
