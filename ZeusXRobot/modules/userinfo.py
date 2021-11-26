@@ -258,9 +258,6 @@ def info(update: Update, context: CallbackContext):
             f"ID: <code>{user.id}</code>\n"
             f"First Name: {html.escape(user.first_name)}")
     
-    if user.uptime:
-        text += f"\n user Uptime: {(uptime)}"
-
     if user.last_name:
         text += f"\nLast Name: {html.escape(user.last_name)}"
 
