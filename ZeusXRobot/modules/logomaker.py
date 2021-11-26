@@ -72,7 +72,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "black"
     shadowcolor = "blue"
-    fnt = glob.glob(".ZeusXRobot/resources/logofonts/*")
+    fnt = glob.glob("./ZeusXRobot/resources/logofonts/*")
     randf = random.choice(fnt)
     font = ImageFont.truetype(randf, 140)
     w, h = draw.textsize(text, font=font)
