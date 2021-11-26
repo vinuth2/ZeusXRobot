@@ -7,6 +7,7 @@ import datetime
 import time
 import platform
 
+from platform import python_version
 from psutil import cpu_percent, virtual_memory, disk_usage, boot_time
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
