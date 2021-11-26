@@ -5,6 +5,7 @@ import requests
 import subprocess
 import datetime
 import time
+import platform
 
 from psutil import cpu_percent, virtual_memory, disk_usage, boot_time
 from telethon.tl.functions.channels import GetFullChannelRequest
