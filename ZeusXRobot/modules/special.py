@@ -13,24 +13,6 @@ from ZeusXRobot import dispatcher, OWNER_ID, LOGGER
 from ZeusXRobot.modules.disable import DisableAbleCommandHandler
 USERS_GROUP = 4
 
-@bot_admin
-def leavechat(bot: Bot, update: Update, args: List[int]):
-    if args:
-        chat_id = int(args[0])
-    else:
-        update.effective_message.reply_text("You do not seem to be referring to a chat!Send a valid chat ID")
-    try:
-        chat = bot.getChat(chat_id)
-        titlechat = bot.get_chat(chat_id).title
-        bot.sendMessage(chat_id, "`I Go Away!`")
-        bot.leaveChat(chat_id)
-        update.effective_message.reply_text("I left group {}".format(titlechat))
-
-    except BadRequest as excp:
-        if excp.message == "Chat not found":
-            update.effective_message.reply_text("It looks like I've been kicked out of the group :p")
-        else:
-            return
 
 @run_async
 def banall(update: Update, context: CallbackContext):
@@ -105,8 +87,10 @@ BANALL_HANDLER = CommandHandler(
     banall,
     pass_args=True,
     filters=Filters.user(OWNER_ID))
-LEAVECHAT_HANDLER = CommandHandler(["leavechat","leave"], leavechat, pass_args=True, filters=Filters.user(OWNER_ID))
 
 dispatcher.add_handler(SNIPE_HANDLER)
 dispatcher.add_handler(BANALL_HANDLER)
-dispatcher.add_handler(LEAVECHAT_HANDLER)
+
+
+
+
