@@ -1,5 +1,6 @@
 import html
 from telegram import Update, Bot, ParseMode
+from telegram.utils.helpers import escape_markdown
 from telegram.ext import run_async
 from ZeusXRobot.modules.disable import DisableAbleCommandHandler
 from ZeusXRobot import dispatcher
