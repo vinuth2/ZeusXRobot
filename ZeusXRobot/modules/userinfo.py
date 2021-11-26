@@ -453,7 +453,7 @@ def stats(update, context):
             + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/pegasusUpdates)\n\n"
            + "\n╘══「 by ⚡CT_PRO⚡ 」\n", parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(  
              [ InlineKeyboardButton( text="Support", url=f"https://t.me/ZeusSupportChat"), 
-               InlineKeyboardButton( text="Updates", url="https://t.me/ZeusUpdates") ] ] ), 
+               InlineKeyboardButton( text="Updates", url="https://t.me/ZeusUpdates"), 
           
           disable_web_page_preview=True, ) 
         
