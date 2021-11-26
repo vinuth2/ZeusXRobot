@@ -199,7 +199,7 @@ aiohttpsession = ClientSession()
       
 arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("ZeusXRobot", API_ID, API_HASH)
+telethn = TelegramClient("ZeusXRobot", api_id=API_ID, api_hash=API_HASH)
 pgram = Client("ZeusXRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
@@ -231,4 +231,3 @@ BOT_USERNAME = bottie.username
 BOT_NAME = bottie.first_name
 BOT_MENTION = bottie.mention
 
-BOT_USERNAME= "@ZeusXRobot"
