@@ -450,10 +450,26 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/pegasusUpdates)\n\n"
-            + "\n╘══「 by ⚡CT_PRO⚡ 」\n", parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(  [ InlineKeyboardButton( text="Support", url=f"https://t.me/ZeusSupportchat"), InlineKeyboardButton( text="Updates", url="https://t.me/Zeusupdates"),
-      disable_web_page_preview=True, ) except BaseException: update.effective_message.reply_text( ( ( ( "\n*Bot statistics*:\n" + "\n".join(mod.__stats__() for mod in STATS) ) + "\n\n \n\n" ) + "╘══「 by ⚡CT_PRO⚡ 」\n" ), parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton( text="Support", url=f"https://t.me/ZeusSupportchat"), InlineKeyboardButton( text="Updates", url="https://t.me/Zeusupdates"),
-      disable_web_page_preview=True, )
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/ZeusUpdates)\n\n"
+            + "╘══「 by [⚡CT_PRO⚡](https://github.com/ctzfamily) 」\n",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+        )
+    except BaseException:
+        update.effective_message.reply_text(
+            (
+                (
+                    (
+                        "\n*Bot statistics*:\n"
+                        + "\n".join(mod.__stats__() for mod in STATS)
+                    )
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/ZeusUpdates)\n\n"
+                )
+                + "╘══「 by [⚡CT_PRO⚡](https://github.com/ctzfamily) 」\n"
+            ),
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+        )
 
 @run_async
 def about_bio(update: Update, context: CallbackContext):
