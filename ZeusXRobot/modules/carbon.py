@@ -26,5 +26,4 @@ async def carbon_func(_, message):
                           photo=carbon,
                           caption="**Made by @ZeusXRobot**", reply_markup=InlineKeyboardMarkup(
                               [[ InlineKeyboardButton(text="⚡UPDATES", url=f"t.me/{UPDATES_CHANNEL}")]]
-                              
-carbon.close()
+                             
