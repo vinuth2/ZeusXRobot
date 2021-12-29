@@ -335,7 +335,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*Powered By @PegasusXteam*\nHere is the help for the *{}* module:\n".format(
+                "*Powered By @PegasusXteam*\n *Module Name:*`{}`\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
