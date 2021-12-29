@@ -424,7 +424,7 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="🔄Go Inline🔄", switch_inline_query_current_chat=""),
                  ],
                   [
-                    InlineKeyboardButton(text="Stats", casllback_data="stats_callback"),
+                    InlineKeyboardButton(text="Stats", callback_data="stats_callback"),
                     InlineKeyboardButton(text="Updates", url="t.me/PegasusUpdates"),
                  ],
                  [
