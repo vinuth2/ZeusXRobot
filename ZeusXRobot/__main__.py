@@ -416,8 +416,8 @@ def zeus_data_callback(update, context):
     
     elif query.data == "zeus_info":
         query.message.edit_text(
-            text="BOT : `Alive`\nPYTHON : `3.8.6`\nPTB : `12.8`VCPLAYER : `Ded`\nREPO : `Private`\n",
-            parse_mode=ParseMode.MARKDOWN,
+            text=f"BOT : `Alive`\nUPTIME : `{}`\nPYTHON : `3.8.6`\nPTB : `12.8`\nVCPLAYER : `Ded`\nREPO : `Private`\n".format( 
+                uptime),parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
