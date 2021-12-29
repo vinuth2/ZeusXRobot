@@ -15,7 +15,7 @@ from ZeusXRobot import (
     TOKEN,
     URL,
     WEBHOOK,
-    SUPPORT_CHAT,
+    SUPPORT_CHAT, UPDATES_CHANNEL,
     dispatcher,
     StartTime,
     telethn,
@@ -105,10 +105,10 @@ buttons = [
                     [                  
                        InlineKeyboardButton(
                              text="⚡ZeusSupport",
-                             url=f"https://t.me/ZeusSupportChat"),
+                             url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
                              text="⚡ZeusUpdates",
-                             url=f"https://t.me/ZeusUpdates"),
+                             url=f"https://t.me/{UPDATES_CHANNEL}"),
                      ],
                     [
                     InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
@@ -132,7 +132,7 @@ List of all the Modules:
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """Contact to **@ZeusSupportChat**"""
+DONATE_STRING = """t.me/unitedsupport"""
 HELP_IMG= "https://telegra.ph/file/5f296f959250d7cd88b09.jpg"
 
 
@@ -255,8 +255,8 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Support ", url="t.me/ZeusSupportChat"),
-                  InlineKeyboardButton(text=" Updates ", url="t.me/ZeusUpdates"),
+                  InlineKeyboardButton(text=" Support ", url=f"t.me/{SUPPORT_CHAT}"),
+                  InlineKeyboardButton(text=" Updates ", url=f"t.me/{UPDATES_CHANNEL}"),
                   ]
                 ]
             ),
@@ -415,17 +415,15 @@ def zeus_data_callback(update, context):
     
     elif query.data == "zeus_info":
         query.message.edit_text(
-            text=f"Credit For Zeus. \n  Repo & Devlopers.\n"
-            f"click the 🔄go inline button and us inline cmds."
-            f"\nHere Some Developers Helping in Making The @ZeusXRobot",
+            text="UPDATEING....",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🔄Go Inline", switch_inline_query_current_chat=""),
+                    InlineKeyboardButton(text="🔄Go Inline🔄", switch_inline_query_current_chat=""),
                  ],
                   [
-                    InlineKeyboardButton(text="Support", url="t.me/UnitedSupport"),
+                    InlineKeyboardButton(text="Support", url="t.me/pegasusSupportchat"),
                     InlineKeyboardButton(text="Updates", url="t.me/PegasusUpdates"),
                  ],
                  [
