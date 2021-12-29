@@ -21,8 +21,9 @@ async def carbon_func(_, message):
     m = await message.reply_text("**⬇Downloading...**")
     carbon = await make_carbon(message.reply_to_message.text)
     await m.edit("**⬆Uploading...**")
-    msg = "**Made by @ZeusXRobot**"
-    button= [[InlineKeyboardButton(text="⚡UPDATES", url=f"t.me/{UPDATES_CHANNEL}")]]
-    await pbot.send_photo(message.chat.id, carbon,caption=msg, reply_markup=InlineKeyboardMarkup(button))
+    await pbot.send_photo(message.chat.id,
+                          photo=carbon,
+                          caption="**Made by @ZeusXRobot**", reply_markup=InlineKeyboardMarkup(
+                              [[ InlineKeyboardButton(text="⚡UPDATES", url=f"t.me/{UPDATES_CHANNEL}")]]
     await m.delete()
     carbon.close()
