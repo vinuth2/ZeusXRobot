@@ -100,9 +100,8 @@ if ENV:
     REDIS_URL = os.environ.get("REDIS_URL")
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
-    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
-    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
+    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
     TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "lightYagami")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     LOG_GROUP_ID = os.environ.get('LOG_GROUP_ID', None)
@@ -173,6 +172,7 @@ else:
     ARQ_API_KEY = Config.ARQ_API_KEY
     AI_API_KEY = Config.AI_API_KEY
     OPENWEATHERMAP_ID = Config.OPENWEATHERMAP_ID
+    TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
     REM_BG_API_KEY = Config.REM_BG_API_KEY
     WALL_API = Config.WALL_API
     SUPPORT_CHAT = Config.SUPPORT_CHAT
