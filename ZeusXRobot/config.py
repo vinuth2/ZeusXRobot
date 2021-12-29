@@ -26,7 +26,7 @@ class Config(object):
     REM_BG_API_KEY = "http://removebg.com"
     TEMP_DOWNLOAD_DIRECTORY = ""
     EVENT_LOGS = -1001574034400  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    SQLALCHEMY_DATABASE_URI = 'postgres://vagszglpwcqjuv:7ac64f23996ef264ec3b67c65f3a6eaa1ac41a77588553e09623558127ff6d1f@ec2-52-202-198-60.compute-1.amazonaws.com:5432/d7pmn914up6sq4'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:ZgL6Hn8YAQ6yOprJbCRj@containers-us-west-23.railway.app:7968/railway'#'postgres://vagszglpwcqjuv:7ac64f23996ef264ec3b67c65f3a6eaa1ac41a77588553e09623558127ff6d1f@ec2-52-202-198-60.compute-1.amazonaws.com:5432/d7pmn914up6sq4'
     LOAD = [] #try to kang this db ur big mothersfuckers i know your noob so only kanging my db
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = None
