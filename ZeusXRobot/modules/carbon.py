@@ -4,7 +4,24 @@ from pyrogram import filters
 
 from ZeusXRobot import pgram #pgram
 from ZeusXRobot.utils.errors import capture_err
-from ZeusXRobot.function.carbonfunc import make_carbon
+from ZeusXRobot.modules.carbon import make_carbon
+import codecs
+import pickle
+from asyncio import gather, get_running_loop
+from io import BytesIO
+from math import atan2, cos, radians, sin, sqrt
+from random import randint
+from re import findall
+from time import time
+from datetime import timedelta, datetime
+from ZeusXRobot import aiohttpsession as aiosession
+import aiofiles
+import aiohttp
+import speedtest
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from pyrogram.types import Message
+from wget import download
+
 
 
 @pgram.on_message(filters.command("carbon"))
