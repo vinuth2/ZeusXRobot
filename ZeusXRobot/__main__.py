@@ -6,7 +6,7 @@ from sys import argv
 from typing import Optional
 
 from ZeusXRobot import (
-    ALLOW_EXCL,
+    ALLOW_EXCL, pgram,
     CERT_PATH,
     DONATION_LINK,
     LOGGER,
@@ -423,7 +423,7 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="🔄Go Inline🔄", switch_inline_query_current_chat=""),
                  ],
                   [
-                    InlineKeyboardButton(text="Support", url="t.me/pegasusSupportchat"),
+                    InlineKeyboardButton(text="Stats", casllback_data="stats_callback"),
                     InlineKeyboardButton(text="Updates", url="t.me/PegasusUpdates"),
                  ],
                  [
@@ -435,7 +435,11 @@ def zeus_data_callback(update, context):
         )
 
 
-
+@pgram.on_callback_query(filters.regex("stats_callback"))
+async def stats_callbacc(_, CallbackQuery):
+    text = await bot_sys_stats()
+    await pgram.answer_callback_query(CallbackQuery.id, text, show_alert=True)
+    
 
 
 def get_help(update: Update, context: CallbackContext):
