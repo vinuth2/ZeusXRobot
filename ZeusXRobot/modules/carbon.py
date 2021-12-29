@@ -38,8 +38,15 @@ async def carbon_func(_, message):
     m = await message.reply_text("`Makeing Carbon...`")
     carbon = await make_carbon(message.reply_to_message.text)
     await m.edit("`Uploading...`")
-    await pgram.send_document(message.chat.id, carbon)
+    await pgram.send_photo(message.chat.id, carbon)
     await m.delete()
     carbon.close()
+    
+    async def make_carbon(code):
+    url = "https://carbonara.vercel.app/api/cook"
+    async with aiosession.post(url, json={"code": code}) as resp:
+        image = BytesIO(await resp.read())
+    image.name = "carbon.png"
+    return image
 
 #ZeusXRobot
