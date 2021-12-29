@@ -17,7 +17,7 @@ from ZeusXRobot import (
     URL,
     WEBHOOK,
     SUPPORT_CHAT, UPDATES_CHANNEL,
-    dispatcher,i
+    dispatcher,
     StartTime,
     telethn,
     updater)
