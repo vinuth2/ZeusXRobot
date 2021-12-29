@@ -95,20 +95,20 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ SUBMIT ZEUSXROBOT ☑️",
+                            text="☑️ SUBMIT GOD ZEUS ☑️",
                             url="t.me/ZeusXRobot?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="❤info", callback_data="zeus_info"),
+                       InlineKeyboardButton(text="🤖 Stats", callback_data="zeus_info"),
                        InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="⚡ZeusSupport",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="👫 Freedom",
+                             url=f"https://t.me/UnitedSupport"),
                        InlineKeyboardButton(
-                             text="⚡ZeusUpdates",
+                             text="⚡ ZeusUpdates",
                              url=f"https://t.me/{UPDATES_CHANNEL}"),
                      ],
                     [
@@ -416,16 +416,15 @@ def zeus_data_callback(update, context):
     
     elif query.data == "zeus_info":
         query.message.edit_text(
-            text="UPDATEING....",
-            parse_mode=ParseMode.HTML,
+            text="BOT : `Alive`\nPYTHON : `3.8.6`\nPTB : `12.8`VCPLAYER : `Ded`\nREPO : `Private`\n",
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🔄Go Inline🔄", switch_inline_query_current_chat=""),
+                    InlineKeyboardButton(text="🔄 Go Inline 🔄", switch_inline_query_current_chat=""),
                  ],
                   [
-                    InlineKeyboardButton(text="Stats", callback_data="stats_callback"),
-                    InlineKeyboardButton(text="Updates", url="t.me/PegasusUpdates"),
+                    InlineKeyboardButton(text="📢 Updates", url="t.me/PegasusUpdates"),
                  ],
                  [
                     InlineKeyboardButton(text="⬅ Back", callback_data="zeus_back"),
@@ -435,12 +434,6 @@ def zeus_data_callback(update, context):
             ),
         )
 
-
-@pgram.on_callback_query(filters.regex("stats_callback"))
-async def stats_callbacc(_, CallbackQuery):
-    text = await bot_sys_stats()
-    await pgram.answer_callback_query(CallbackQuery.id, text, show_alert=True)
-    
 
 
 def get_help(update: Update, context: CallbackContext):
