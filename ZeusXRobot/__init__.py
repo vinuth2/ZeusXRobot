@@ -92,6 +92,7 @@ if ENV:
     OPENWEATHERMAP_ID = os.environ.get('OPENWEATHERMAP_ID', None)
     WALL_API = os.environ.get('WALL_API', None)
     SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', None)
+    UPDATES_CHANNEL = os.environ.get('UPDATES_CHANNEL', None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', None)
     SPAMWATCH_API = os.environ.get('SPAMWATCH_API', None)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None) # From:- https://www.remove.bg/
@@ -175,6 +176,7 @@ else:
     REM_BG_API_KEY = Config.REM_BG_API_KEY
     WALL_API = Config.WALL_API
     SUPPORT_CHAT = Config.SUPPORT_CHAT
+    UPDATES_CHANNEL = Config.UPDATES_CHANNEL
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
 
