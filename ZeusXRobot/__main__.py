@@ -4,6 +4,7 @@ import random
 import re
 from sys import argv
 from typing import Optional
+from pyrogram import filters, idle
 
 from ZeusXRobot import (
     ALLOW_EXCL, pgram,
@@ -16,7 +17,7 @@ from ZeusXRobot import (
     URL,
     WEBHOOK,
     SUPPORT_CHAT, UPDATES_CHANNEL,
-    dispatcher,
+    dispatcher,i
     StartTime,
     telethn,
     updater)
