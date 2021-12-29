@@ -1,3 +1,7 @@
+
+
+lydia = ["CHATBOT"]
+
 def add_chat(chat_id):
     stark = lydia.find_one({"chat_id": chat_id})
     if stark:
