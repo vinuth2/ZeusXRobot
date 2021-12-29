@@ -94,6 +94,8 @@ if ENV:
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
     WALL_API = os.environ.get('WALL_API', None)
     SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', None)
+    BOT_USERNAME = os.environ.get('BOT_USERNAME', None)
+    BOT_ID = os.environ.get('BOT_ID', None)
     UPDATES_CHANNEL = os.environ.get('UPDATES_CHANNEL', None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', None)
     SPAMWATCH_API = os.environ.get('SPAMWATCH_API', None)
@@ -178,6 +180,8 @@ else:
     TIME_API_KEY = Config.TIME_API_KEY
     AI_API_KEY = Config.AI_API_KEY
     WALL_API = Config.WALL_API
+    BOT_USERNAME = Config.BOT_USERNAME
+    BOT_ID = Config.BOT_ID
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     REM_BG_API_KEY = Config.REM_BG_API_KEY
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
