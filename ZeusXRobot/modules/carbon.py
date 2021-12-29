@@ -1,15 +1,8 @@
 
 from pyrogram import filters #carbon by vegeta
-from telegram import (
-    ParseMode,
-    Update,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-)
 from ZeusXRobot import pgram as pbot, BOT_USERNAME, UPDATES_CHANNEL
 from ZeusXRobot.utils.errors import capture_err
 from ZeusXRobot.utils.make_carbon import make_carbon
-
 
 @pbot.on_message(filters.command("carbon"))
 @capture_err
@@ -21,9 +14,7 @@ async def carbon_func(_, message):
     m = await message.reply_text("**⬇Downloading...**")
     carbon = await make_carbon(message.reply_to_message.text)
     await m.edit("**⬆Uploading...**")
+    msg = "**Made by @ZeusXRobot**"
+    await pbot.send_photo(message.chat.id, carbon,caption=msg)
     await m.delete()
-    await pbot.send_photo(message.chat.id,
-                          photo=carbon,
-                          caption="**Made by @ZeusXRobot**", reply_markup=InlineKeyboardMarkup(
-                              [[ InlineKeyboardButton(text="⚡UPDATES", url=f"t.me/{UPDATES_CHANNEL}")]]
-                             
+    carbon.close()
