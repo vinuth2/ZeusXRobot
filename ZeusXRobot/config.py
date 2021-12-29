@@ -34,7 +34,8 @@ class Config(object):
     URL = None
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-    BOT_ID = "2128359921"
+    BOT_USERNAME = "ZeusXRobot
+    BOT_ID = "2116046406"
     
     DRAGONS = get_user_list('elevated_users.json', 'sudos')
 
