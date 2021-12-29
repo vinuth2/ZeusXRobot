@@ -94,7 +94,7 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ ADD GOD ZEUS ☑️",
+                            text="☑️ SUBMIT ZEUSXROBOT ☑️",
                             url="t.me/ZeusXRobot?startgroup=true"),
                     ],
                    [
@@ -117,14 +117,14 @@ buttons = [
 ] 
 
 HELP_STRINGS = """
-Hi there, I'm *Zeus*!
+Hi there, I'm *{}*!
 To make me functional, make sure that i have enough rights in your group.
 Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
 If you want to report bugs or have any questions on how to use me then feel free to reach out: @ZeusSupportChat.
-All commands can be used with the following: [(/),(!),(?),(.),(~)](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
+All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
@@ -134,8 +134,6 @@ List of all the Modules:
 HELP_MSG = "Click the button below to get help manu in your pm."
 DONATE_STRING = """Contact to **@ZeusSupportChat**"""
 HELP_IMG= "https://telegra.ph/file/5f296f959250d7cd88b09.jpg"
-GROUPSTART_IMG= "https://telegra.ph/file/ba1a1b1bfa6007af5946e.jpg"
-
 
 
 IMPORTED = {}
@@ -249,8 +247,8 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         first_name = update.effective_user.first_name
-        update.effective_message.reply_photo(
-            GROUPSTART_IMG, caption= "*hello! {},*\n*Zeus here for you*\n*Working time* : {} ".format(
+        update.effective_message.reply_text(
+            "*hello! {},*\n*Zeus here for you*\n*Working time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
@@ -337,7 +335,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*Bugs report @ZeusSupportChat*\nHere is the help for the *{}* module:\n".format(
+                "*Powered By @PegasusXteam*\nHere is the help for the *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -424,11 +422,7 @@ def zeus_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⚡CT_PRO⚡", url="t.me/Ctzfamily"),
                     InlineKeyboardButton(text="🔄Go Inline", switch_inline_query_current_chat=""),
-                 ],
-                 [
-                    InlineKeyboardButton(text="⚡Repositorie⚡", url="github.com/ctzfamily/vegetaRobot"),
                  ],
                   [
                     InlineKeyboardButton(text="Support", url="t.me/UnitedSupport"),
@@ -722,7 +716,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@ZeusSupportChat","[Zeus Is Ready ⚡](https://telegra.ph/file/b0211a58361d855675051.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","*Zeus Is Ready ⚡*", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
