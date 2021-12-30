@@ -15,9 +15,9 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 7126006  # integer value, dont use ""
-    API_HASH = "f92b05be529835381859ead64a195fa2"
-    TOKEN = "2116046406:AAHMDwkBKmiIdcBWIoizJ-urG9x_7hg1F0A"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    API_ID = 1234567  # integer value, dont use ""
+    API_HASH = ""
+    TOKEN = ""  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1491497760  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "ctzfamily"
     SUPPORT_CHAT = 'UnitedSupport'  #Your own group for support, do not add the @
@@ -26,7 +26,7 @@ class Config(object):
     REM_BG_API_KEY = "http://removebg.com"
     TEMP_DOWNLOAD_DIRECTORY = ""
     EVENT_LOGS = -1001574034400  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    SQLALCHEMY_DATABASE_URI = 'postgres://vagszglpwcqjuv:7ac64f23996ef264ec3b67c65f3a6eaa1ac41a77588553e09623558127ff6d1f@ec2-52-202-198-60.compute-1.amazonaws.com:5432/d7pmn914up6sq4'
+    SQLALCHEMY_DATABASE_URI = '' #do you hub your old heroku app database_URL then put here, most use 25days ago sql
     LOAD = [] #try to kang this db ur big mothersfuckers i know your noob so only kanging my db
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = None
