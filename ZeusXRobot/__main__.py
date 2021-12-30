@@ -416,9 +416,8 @@ def zeus_data_callback(update, context):
     
     elif query.data == "zeus_info":
         botuptime = get_readable_time((time.time() - StartTime))
-        disk = disk_usage("/")
         query.message.edit_text(
-            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*📥 Storage* : `{}`\n*🙄REPO* : `Private`\n".format( 
+            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*🙄REPO* : `Private`\n".format( 
                 botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
