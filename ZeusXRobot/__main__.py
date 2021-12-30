@@ -5,6 +5,7 @@ import re
 from sys import argv
 from typing import Optional
 from platform import python_version
+from psutil import disk_usage
 
 from ZeusXRobot import (
     ALLOW_EXCL,
