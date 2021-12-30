@@ -19,7 +19,7 @@
 
 Your star's my motivation 😞 Going to fork hit a star 😊 | thanks for supports.
 
-## Available on Telegram as [@VegetaRobot](https://t.me/VegetaRobot)
+## Available on Telegram as [@ZeusXRobot](https://t.me/ZeusXRobot)
 
 ## ✨ Deploy to Heroku ✨
 
