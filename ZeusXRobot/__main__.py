@@ -4,7 +4,7 @@ import random
 import re
 from sys import argv
 from typing import Optional
-from platform import python_version
+from platform import python_version #ZeusXRobot
 
 from ZeusXRobot import (
     ALLOW_EXCL,
