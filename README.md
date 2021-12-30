@@ -7,7 +7,7 @@
   <a href="https://github.com/Ctzfamily/ZeusXRobot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a>
 </p>
 
-<p align="center"><a href="https://t.me/ZeusXRobot"><img src="http://telegr.ph//file/9e23289b428842bc0d22c.jpg" width="200"></a></p>
+<p align="center"><a href="https://t.me/ZeusXRobot"><img src="http://telegr.ph//file/c406820bb76152e657a16.jpg" width="200"></a></p>
 
 <p align="center">
     <a href="https://github.com/Ctzfamily/ZeusXRobot"> <img src="https://img.shields.io/github/repo-size/Ctzfamily/ZeusXRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
