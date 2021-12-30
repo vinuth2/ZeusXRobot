@@ -29,7 +29,7 @@ Your star's my motivation 😞 Going to fork hit a star 😊 | thanks for suppor
 
 ## ✨ Deploy to Railway ✨
 
-## Edit A VegetaRobot/Config.py in
+## Edit A ZeusXRobot/Config.py in
 - `OWNER_ID`|`OWNER_USERNAME`
 - `API_ID`| `API_HARISH`|
 - `TOKEN`| ɴᴏᴡ ʙᴏᴛ ʀᴜɴs ʀᴀɪʟᴡᴀʏ!
