@@ -417,8 +417,8 @@ def zeus_data_callback(update, context):
     elif query.data == "zeus_info":
         botuptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*🙄REPO* : `Private`\n".format( 
-                botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
+            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*🙄REPO* : `Private`\n".
+            format(botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
