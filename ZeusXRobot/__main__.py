@@ -5,7 +5,6 @@ import re
 from sys import argv
 from typing import Optional
 from platform import python_version
-from psutil import disk_usage
 
 from ZeusXRobot import (
     ALLOW_EXCL,
@@ -29,7 +28,7 @@ from ZeusXRobot.modules import ALL_MODULES
 from ZeusXRobot.modules.helper_funcs.chat_status import is_user_admin
 from ZeusXRobot.modules.helper_funcs.misc import paginate_modules
 from ZeusXRobot.modules.disable import DisableAbleCommandHandler
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, __version__ as ptbver
 from telegram.error import (
     BadRequest,
     ChatMigrated,
@@ -419,8 +418,8 @@ def zeus_data_callback(update, context):
         botuptime = get_readable_time((time.time() - StartTime))
         disk = disk_usage("/")
         query.message.edit_text(
-            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `12.8`\n*📥 Storage* : `{}`\n*🙄REPO* : `Private`\n".format( 
-                botuptime,python_version,disk[3]),parse_mode=ParseMode.MARKDOWN,
+            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*📥 Storage* : `{}`\n*🙄REPO* : `Private`\n".format( 
+                botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
