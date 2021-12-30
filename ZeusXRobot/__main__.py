@@ -4,10 +4,10 @@ import random
 import re
 from sys import argv
 from typing import Optional
-from pyrogram import filters, idle
+from platform import python_version
 
 from ZeusXRobot import (
-    ALLOW_EXCL, pgram,
+    ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
     LOGGER,
@@ -418,8 +418,8 @@ def zeus_data_callback(update, context):
         botuptime = get_readable_time((time.time() - StartTime))
         disk = disk_usage("/")
         query.message.edit_text(
-            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `3.8.6`\n🌠 PTB* : `12.8`\n*📥 Storage* : `{}`\n*🙄REPO* : `Private`\n".format( 
-                botuptime,disk[3]),parse_mode=ParseMode.MARKDOWN,
+            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `12.8`\n*📥 Storage* : `{}`\n*🙄REPO* : `Private`\n".format( 
+                botuptime,python_version,disk[3]),parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
