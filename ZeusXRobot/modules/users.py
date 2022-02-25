@@ -132,7 +132,7 @@ def chats(update: Update, context: CallbackContext):
         update.effective_message.reply_document(
             document=output,
             filename="groups_list.txt",
-            caption="Here be the list of groups in my database.")
+            caption="Here be the list of all groups in my database.")
 
 
 @run_async
