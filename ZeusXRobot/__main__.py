@@ -99,9 +99,9 @@ buttons = [
                             url="t.me/ZeusXRobot?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="🤖 Stats", callback_data="zeus_info"),
-                       InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
-                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
+                       InlineKeyboardButton(text="💓Source", url="https://github.com/Ctzfamily/ZeusXRobot"),
+                       InlineKeyboardButton(text="📊 Network", url="https://t.me/PegasusBots"),
+                       InlineKeyboardButton(text="🔔 Logs", url="https://t.me/zeusXRobotlogs"),
                      ],
                     [                  
                        InlineKeyboardButton(
@@ -109,7 +109,7 @@ buttons = [
                              url=f"https://t.me/UnitedSupport"),
                        InlineKeyboardButton(
                              text="⚡ ZeusUpdates",
-                             url=f"https://t.me/{UPDATES_CHANNEL}"),
+                             url=f"https://t.me/zeusXrobotupdates"),
                      ],
                     [
                     InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
