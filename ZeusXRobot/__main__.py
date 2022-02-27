@@ -109,7 +109,7 @@ buttons = [
                              url=f"https://t.me/UnitedSupport"),
                        InlineKeyboardButton(
                              text="⚡ ZeusUpdates",
-                             url=f"https://t.me/zeusXrobotupdates"),
+                             url=f"https://t.me/Zeusupdates"),
                      ],
                     [
                     InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
@@ -336,7 +336,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*Powered By @PegasusXteam*\n *Module Name:*`{}`\n".format(
+                "\n*Module Name:*`{}`\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
