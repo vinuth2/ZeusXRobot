@@ -79,11 +79,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """Hello there! I'm *Alaine* ✨ 
-An  advanced telegram Group management Bot For help 
+An advanced telegram Group management bot for help 
 You Protect Your Groups & Suit For All Your Needs."""
 STICKERS = ( 
-      "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
-      "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+      "CACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
+      "CACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
 )
 
 buttons = [
