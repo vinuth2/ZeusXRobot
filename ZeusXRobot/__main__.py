@@ -82,8 +82,8 @@ PM_START_TEXT = """Hello there! I'm *Alaine* ✨
 An advanced telegram Group management bot for help 
 You Protect Your Groups & Suit For All Your Needs."""
 STICKERS = ( 
-      "CAaCAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
-      "CAaCAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+      "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
+      "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
 )
 
 buttons = [
@@ -107,13 +107,11 @@ buttons = [
 HELP_STRINGS = """
 Hey, I'm *Alaine*!
 To make me functional, make sure that I have enough rights in your group.
-
 *Helpful commands:*
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-
-[♡](https://telegra.ph/file/648aca75adfb9533a2161.jpg) If you want to report bugs or have any questions on how to use me then feel free to reach out: @MusicUpdates_chat.
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @MusicUpdates_chat.
 All commands can be used with the following: / ! .
 List of all the Modules:
 """.format(
