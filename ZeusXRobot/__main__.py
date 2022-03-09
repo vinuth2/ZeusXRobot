@@ -82,8 +82,8 @@ PM_START_TEXT = """Hello there! I'm *Alaine* ✨
 An advanced telegram Group management bot for help 
 You Protect Your Groups & Suit For All Your Needs."""
 STICKERS = ( 
-      "CACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
-      "CACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+      "CAaCAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
+      "CAaCAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
 )
 
 buttons = [
@@ -238,15 +238,15 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
-            "*hello! {},*\n*Zeus here for you*\n*Working time* : {} ".format(
+            "*Hello! {},*\n*Alaine here for you*\n*Working time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Support ", url=f"t.me/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text=" Updates ", url=f"t.me/{UPDATES_CHANNEL}"),
+                  InlineKeyboardButton(text=" Support ", url=f"https://t.me/MusicUpdates_chat"),
+                  InlineKeyboardButton(text=" Updates ", url=f"https://t.me/The_Roboton"),
                   ]
                 ]
             ),
