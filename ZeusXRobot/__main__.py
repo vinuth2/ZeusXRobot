@@ -78,12 +78,18 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = """Hey there! My name is **Alaine** ✨
-I can manage your group with lots of useful features, Feel free to add me to your group."""
+PM_START_TEXT = """Hello there! I'm *Alaine* ✨ 
+An  advanced telegram Group management Bot For help 
+You Protect Your Groups & Suit For All Your Needs."""
+
+STICKERS = ( 
+            "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
+            "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+)
 
 buttons = [
                     [
-                       InlineKeyboardButton(text="❓ Help", callback_data="help_back"),     
+                       InlineKeyboardButton(text="❓ Commands Menu", callback_data="help_back"),     
                      ],
                     [                  
                        InlineKeyboardButton(
@@ -94,20 +100,22 @@ buttons = [
                              url=f"https://t.me/MusicUpdates_Chat"),
                      ],
                     [
-                    InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
+                    InlineKeyboardButton(text="➕ Add me to your chat", url=f"https://t.me/MissAlaine_bot?startgroup=true"
          ),
     ],
 ] 
 
 HELP_STRINGS = """
-Hi there, I'm *{}*!
+Hey, I'm *Alaine*!
 To make me functional, make sure that i have enough rights in your group.
-Helpful commands:
+
+*Helpful commands:*
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @ZeusSupportChat.
-All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
+
+If you want to report bugs or have any questions on how to use me then feel free to reach out.
+All commands can be used with the following: / ! .
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
@@ -406,7 +414,7 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="🔄 Go Inline 🔄", switch_inline_query_current_chat=""),
                  ],
                   [
-                    InlineKeyboardButton(text="📢 Updates", url="t.me/PegasusUpdates"),
+                    InlineKeyboardButton(text="📢 Updates", url="https://t.me/The_Roboton"),
                  ],
                  [
                     InlineKeyboardButton(text="⬅ Back", callback_data="zeus_back"),
