@@ -78,27 +78,20 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = """
-Hey there! My name is Alaine ✨
-I can manage your group with lots of useful features, feel free to add me to your group. 
-"""
-STICKERS = (
-      "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1
-      "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
-)
+PM_START_TEXT = """Hey there! My name is **Alaine** ✨
+I can manage your group with lots of useful features, Feel free to add me to your group."""
 
 buttons = [
                     [
-                       InlineKeyboardButton(text="ok", url="https://t.me/PegasusBots"),
-                       InlineKeyboardButton(text="🔔 Logs", url="https://t.me/ZeusXRobotlogs"),
+                       InlineKeyboardButton(text="❓ Help", callback_data="help_back"),     
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="👫 Freedom",
-                             url=f"https://t.me/UnitedSupport"),
+                             text="🔄 Updates",
+                             url=f"https://t.me/The_Roboton"),
                        InlineKeyboardButton(
-                             text="⚡ ZeusUpdates",
-                             url=f"https://t.me/Zeusupdates"),
+                             text="💬 Support",
+                             url=f"https://t.me/MusicUpdates_Chat"),
                      ],
                     [
                     InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
