@@ -81,10 +81,9 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """Hello there! I'm *Alaine* ✨ 
 An  advanced telegram Group management Bot For help 
 You Protect Your Groups & Suit For All Your Needs."""
-
 STICKERS = ( 
-            "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
-            "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+      "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
+      "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
 )
 
 buttons = [
@@ -114,7 +113,7 @@ To make me functional, make sure that i have enough rights in your group.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
 
-If you want to report bugs or have any questions on how to use me then feel free to reach out.
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @MusicUpdates_chat.
 All commands can be used with the following: / ! .
 List of all the Modules:
 """.format(
