@@ -95,7 +95,7 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ SUBMIT GOD ZEUS ☑️",
+                            text="☑️ Ok SUBMIT GOD ZEUS ☑️",
                             url="t.me/ZeusXRobot?startgroup=true"),
                     ],
                    [
