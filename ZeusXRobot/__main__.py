@@ -88,7 +88,7 @@ STICKERS = (
 
 buttons = [
                     [
-                       InlineKeyboardButton(text="❓ Commands Menu", callback_data="help_back"),     
+                       InlineKeyboardButton(text="♡ owner", url=f"https://t.me/About_Vinuth"),     
                      ],
                     [                  
                        InlineKeyboardButton(
@@ -99,7 +99,7 @@ buttons = [
                              url=f"https://t.me/MusicUpdates_Chat"),
                      ],
                     [
-                    InlineKeyboardButton(text="➕ Add me to your chat", url=f"https://t.me/MissAlaine_bot?startgroup=true"
+                    InlineKeyboardButton(text="❓ Help & Commands", callback_data="help_back"
          ),
     ],
 ] 
