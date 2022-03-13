@@ -87,20 +87,28 @@ STICKERS = (
 )
 
 buttons = [
-                    [
-                       InlineKeyboardButton(text="♡ owner", url=f"https://t.me/About_Vinuth"),     
+    [
+        InlineKeyboardButton(
+                            text="➕ Add me to your chat",
+                            url="t.me/ZeusXRobot?startgroup=true"),
+                    ],
+                   [
+                       InlineKeyboardButton(text="💓Source", url="https://github.com/Ctzfamily/ZeusXRobot"),
+                       InlineKeyboardButton(text="📊 Network", url="https://t.me/PegasusBots"),
+                       InlineKeyboardButton(text="🔔 Logs", url="https://t.me/ZeusXRobotlogs"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🔄 Updates",
-                             url=f"https://t.me/The_Roboton"),
+                             text="👫 Freedom",
+                             url=f"https://t.me/UnitedSupport"),
                        InlineKeyboardButton(
-                             text="💬 Support",
-                             url=f"https://t.me/MusicUpdates_Chat"),
+                             text="⚡ ZeusUpdates",
+                             url=f"https://t.me/Zeusupdates"),
                      ],
                     [
-                    InlineKeyboardButton(text="❓ Help & Commands", callback_data="help_back"),
-                    ],
+                    InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
+         ),
+    ],
 ] 
 
 HELP_STRINGS = """
