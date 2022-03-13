@@ -112,14 +112,14 @@ buttons = [
 ] 
 
 HELP_STRINGS = """
-Hey, I'm *Alaine*!
+Hi there, I'm *{}*!
 To make me functional, make sure that I have enough rights in your group.
-*Helpful commands:*
+Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
 If you want to report bugs or have any questions on how to use me then feel free to reach out: @MusicUpdates_chat.
-All commands can be used with the following: / ! .
+All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
