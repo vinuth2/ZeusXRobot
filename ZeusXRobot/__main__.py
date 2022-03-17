@@ -78,8 +78,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = """Hey there! My name is *Marie* ✨ 
-I can help manage your groups with useful features, feel free to add me to your groups!"""
+PM_START_TEXT = """Hello there! I'm *Marie* ✨ 
+An advanced telegram Group management bot for help 
+You Protect Your Groups & Suit For All Your Needs."""
 STICKERS = ( 
       "CAACAgUAAxkBAAEYuP9iMrhinvXNPfKjTk27LXQMR0PLNAACigYAAtKtmFVhX7r8_kg5myME", #1 
       "CAACAgUAAxkBAAEYuPxiMrhM3D8pYGjk4IIFzNpRF19qdQACIwUAAvRumFXwX-7xPjfHfCME", #2
@@ -88,8 +89,11 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="❓ Commands Menu",
+                            text="❓ Help",
                             callback_data="help_back"),
+                       InlineKeyboardButton(
+                             text="🧔🏻‍♂ Dev",
+                             url=f"https://t.me/ImVinuth"),
                     ],
                     [                  
                        InlineKeyboardButton(
