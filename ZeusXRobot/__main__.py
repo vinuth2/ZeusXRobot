@@ -237,15 +237,15 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
-            "*Hello! {},*\n*Alaine here for you*\n*Working time* : {} ".format(
+            "*Hey! {},*\n*[Marie](https://t.me/TheMarie_bot) here for you*\n Working time : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Support ", url=f"https://t.me/MusicUpdates_chat"),
-                  InlineKeyboardButton(text=" Updates ", url=f"https://t.me/The_Roboton"),
+                  InlineKeyboardButton(text="• Support ", url=f"https://t.me/MusicUpdates_chat"),
+                  InlineKeyboardButton(text="• Updates ", url=f"https://t.me/The_Roboton"),
                   ]
                 ]
             ),
