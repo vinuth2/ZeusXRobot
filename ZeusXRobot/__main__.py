@@ -78,35 +78,29 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = """Hello there! I'm *Alaine* ✨ 
-An advanced telegram Group management bot for help 
-You Protect Your Groups & Suit For All Your Needs."""
+PM_START_TEXT = """Hey there! My name is *Marie* ✨ 
+I can help manage your groups with useful features, feel free to add me to your groups!"""
 STICKERS = ( 
-      "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1 
-      "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+      "CAACAgUAAxkBAAEYuP9iMrhinvXNPfKjTk27LXQMR0PLNAACigYAAtKtmFVhX7r8_kg5myME", #1 
+      "CAACAgUAAxkBAAEYuPxiMrhM3D8pYGjk4IIFzNpRF19qdQACIwUAAvRumFXwX-7xPjfHfCME", #2
 )
 
 buttons = [
     [
         InlineKeyboardButton(
-                            text="➕ Add me to your chat",
-                            url="t.me/ZeusXRobot?startgroup=true"),
+                            text="❓ Commands Menu",
+                            callback_data="help_back"),
                     ],
-                   [
-                       InlineKeyboardButton(text="💓Source", url="https://github.com/Ctzfamily/ZeusXRobot"),
-                       InlineKeyboardButton(text="📊 Network", url="https://t.me/PegasusBots"),
-                       InlineKeyboardButton(text="🔔 Logs", url="https://t.me/ZeusXRobotlogs"),
-                     ],
                     [                  
                        InlineKeyboardButton(
-                             text="👫 Freedom",
-                             url=f"https://t.me/UnitedSupport"),
+                             text="⚙ Marie News",
+                             url=f"https://t.me/The_Roboton"),
                        InlineKeyboardButton(
-                             text="⚡ ZeusUpdates",
-                             url=f"https://t.me/Zeusupdates"),
+                             text="💬 Support",
+                             url=f"https://t.me/MusicUpdates_chat"),
                      ],
                     [
-                    InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
+                    InlineKeyboardButton(text="➕ Add me to your chat", url="https://t.me/TheMarie_bot?startgroup=true"
          ),
     ],
 ] 
@@ -119,7 +113,7 @@ Helpful commands:
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
 If you want to report bugs or have any questions on how to use me then feel free to reach out: @MusicUpdates_chat.
-All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
+All commands can be used with the following: / ! .
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
@@ -127,7 +121,7 @@ List of all the Modules:
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """t.me/unitedsupport"""
+DONATE_STRING = """t.me/ImVinuth"""
 HELP_IMG= "https://telegra.ph/file/5f296f959250d7cd88b09.jpg"
 
 
