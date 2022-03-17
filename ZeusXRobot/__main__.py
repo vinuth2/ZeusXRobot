@@ -237,7 +237,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
-            "*Hey! {},*\n*Marie here for you*\n Working time : {} ".format(
+            "*Hey! {},*\n*Marie here for you*\nWorking time : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
