@@ -252,9 +252,9 @@ def info(update: Update, context: CallbackContext):
         return
 
     rep = message.reply_text(
-        "<code> Connecting to Zeus </code>", parse_mode=ParseMode.HTML)
+        "<code> Connecting to Marie </code>", parse_mode=ParseMode.HTML)
 
-    text = (f"╒═══「<b> Zeus DB Userinfo:</b> 」\n"
+    text = (f"╒═══「<b> Marie DB Userinfo:</b> 」\n"
             f"ID: <code>{user.id}</code>\n"
             f"First Name: {html.escape(user.first_name)}")
     
@@ -429,7 +429,7 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 📊 Zeus Stats 」*\n\n"
+    status = "*╒═══「 📊 Marie Stats 」*\n\n"
     status += "*➢ Zeus Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*➢ System:* " + str(uname.system) + "\n"
@@ -450,8 +450,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT})  | [✦ Updates](https://t.me/ZeusUpdates)\n\n"
-            + "╘══「 by [⚡CT⚡](https://github.com/ctzfamily) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT})  | [✦ Updates](https://t.me/Marie_Updates)\n\n"
+            + "╘══「 by [Vinuth](https://github.com/Vinuth-Dinsitha) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -604,7 +604,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "📜Info/Afk"
+__mod_name__ = "📜 Info/Afk"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER, GIFID_HANDLER, INFO_HANDLER, SET_BIO_HANDLER, GET_BIO_HANDLER,
