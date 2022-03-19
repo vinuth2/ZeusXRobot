@@ -116,8 +116,8 @@ Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @ZeusSupportChat.
-All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @MusicUpdates_Chat.
+All commands can be used with the following: / ! [.](https://telegra.ph/file/35b40ed60c1df7765dcdd.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
@@ -125,8 +125,8 @@ List of all the Modules:
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """t.me/ImVinuth"""
-HELP_IMG= "https://telegra.ph/file/5f296f959250d7cd88b09.jpg"
+DONATE_STRING = """@ImVinuth"""
+HELP_IMG= "https://telegra.ph/file/35b40ed60c1df7765dcdd.jpg"
 
 
 IMPORTED = {}
