@@ -48,7 +48,7 @@ async def paste(content):
 async def inline_help_func(__HELP__):
     buttons = InlineKeyboard(row_width=2)
     buttons.add(
-        InlineKeyboardButton("🔐 More Help.", url=f"t.me/ZeusXRobot?start=help"),
+        InlineKeyboardButton("🔐 More Help.", url=f"t.me/TheMarie_bot?start=help"),
         InlineKeyboardButton("🔄 Go Inline", switch_inline_query_current_chat=""),
     )
     answerss = [
@@ -56,7 +56,7 @@ async def inline_help_func(__HELP__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(__HELP__),
-            thumb_url="https://telegra.ph/file/93203499260184ff876b5.jpg",
+            thumb_url="https://telegra.ph/file/35b40ed60c1df7765dcdd.jpg",
             reply_markup=buttons,
         )
     ]
@@ -70,18 +70,18 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("🔐 Main Bot", url="https://t.me/ZeusXRobot?start=help"),
+        InlineKeyboardButton("🔐 Main Bot", url="https://t.me/TheMarie_bot?start=help"),
         InlineKeyboardButton("🔄 Go Inline", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Zeus 🖤](https://github.com/Ctzfamily/ZeusXRobot):**
+**[Marie 🖤](https://github.com/Vinuth-Dinsitha/Mariebot):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
 **Pyrogram:** `{pyrover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/ZeusXRobot) | [REPO](https://github.com/Ctzfamily/VegetaRobot)
+**Profiles:** [BOT](t.me/TheMarie_bot) | [REPO](https://github.com/Vinuth-Dinsitha/Mariebot)
 """
     answers.append(
         InlineQueryResultArticle(
