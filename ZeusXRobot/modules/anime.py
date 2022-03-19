@@ -557,8 +557,6 @@ def kayo(update: Update, context: CallbackContext):
 
 
 __help__ = """
-Get information about anime, manga or characters from [AniList](anilist.co).
-
 *Available commands:*
 
  • `/anime <anime>`*:* returns information about the anime.
@@ -566,12 +564,12 @@ Get information about anime, manga or characters from [AniList](anilist.co).
  • `/manga <manga>`*:* returns information about the manga.
  • `/user <user>`*:* returns information about a MyAnimeList user.
  • `/upcoming`*:* returns a list of new anime in the upcoming seasons.
- • `/kaizoku <anime>`*:* search an anime on animekaizoku.com
- • `/kayo <anime>`*:* search an anime on animekayo.com
+ • `/kaizoku <anime>`*:* search an anime
+ • `/kayo <anime>`*:* search an anime
  • `/airing <anime>`*:* returns anime airing info.
  • `/imdb` <anime/movie name> *:* get IMDb details of the anime or movie
 
- ➩ *Anime Fun:*
+ *Anime Fun:*
  • `/aq` *:* get random anime quotes
 
  """
@@ -596,7 +594,7 @@ dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
-__mod_name__ = "💞Anime"
+__mod_name__ = "💞 Anime"
 __command_list__ = [
     "anime", "manga", "character", "user", "upcoming", "kaizoku", "airing",
     "kayo"
