@@ -116,7 +116,7 @@ Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @MusicUpdates_Chat.
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @ZeusSupportChat.
 All commands can be used with the following: / ! [.](https://telegra.ph/file/35b40ed60c1df7765dcdd.jpg)
 List of all the Modules:
 """.format(
