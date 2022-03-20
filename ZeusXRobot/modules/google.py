@@ -275,26 +275,26 @@ async def apk(e):
         await e.reply("Exception Occured:- " + str(err))
 
 
-__mod_name__ = "🎒Tools"
+__mod_name__ = "🎒 Tools"
 
 __help__ = """
- ❍ `/ud` (text)*:* meaning of the word
- ❍ `/wiki` (text)*:* search on wikipedia.
- ❍ `/google` <text>*:* Perform a google search
- ❍ `/img` <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
- ❍ `/app` <appname>*:* Searches for an app in Play Store and returns its details.
- ❍ `/reverse`: Does a reverse image search of the media which it was replie.
+ • `/ud` (text)*:* meaning of the word
+ • `/wiki` (text)*:* search on wikipedia.
+ • `/google` <text>*:* Perform a google search
+ • `/img` <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
+ • `/app` <appname>*:* Searches for an app in Play Store and returns its details.
+ • `/reverse`: Does a reverse image search of the media which it was replie.
  
 *Zip a files And Unzip files*
- ❍ `/zip`: reply to a telegram file to compress it in .zip format
- ❍ `/unzip`: reply to a telegram file to decompress it from the .zip format.
+ • `/zip`: reply to a telegram file to compress it in .zip format
+ • `/unzip`: reply to a telegram file to decompress it from the .zip format.
  
  *hide a text and show hide a text*
- ❍ `/encrypt` - reply to (text) hide a text.
- ❍ `/decrypt` - reply to hide (text) showing hide text to normal text.
+ • `/encrypt` - reply to (text) hide a text.
+ • `/decrypt` - reply to hide (text) showing hide text to normal text.
   
 *Telegraph Uploader Text & 5mb (image|gif|video)*
- ❍ `/tm`: upload image or GIFs telegraph.
- ❍ `/txt`: reply to text Upload telegraph.
+ • `/tm`: upload image or GIFs telegraph.
+ • `/txt`: reply to text Upload telegraph.
    
 """
