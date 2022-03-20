@@ -611,7 +611,7 @@ Group admins/group owners do not need these commands.
  ╠ `/ungban`*:* Ungbans the user, same usage as gban
  ╚ `/gbanlist`*:* Outputs a list of gbanned users
 
-Visit @{SUPPORT_CHAT} for more information.
+Visit @MusicUpdates_chat for more information.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "addarank"), addsudo)
@@ -647,7 +647,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "🎖Ranks"
+__mod_name__ = "🎖 Ranks"
 __handlers__ = [
     SUDO_HANDLER, SUPPORT_HANDLER, TIGER_HANDLER, WHITELIST_HANDLER,
     UNSUDO_HANDLER, UNSUPPORT_HANDLER, UNTIGER_HANDLER, UNWHITELIST_HANDLER,
