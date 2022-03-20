@@ -142,7 +142,7 @@ __help__ = """
 • `/Chatbot`*:* Shows chatbot control panel
 """
 
-__mod_name__ = "🤖 Chat Bot"
+__mod_name__ = "🤖 Chatbot"
 
 
 CHATBOTK_HANDLER = CommandHandler("chatbot", kuki )
