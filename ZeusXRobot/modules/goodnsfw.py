@@ -206,9 +206,6 @@ __handlers__ = [
 ]
 
 __help__ = """
-Module credits: [VegetaRobot](https://github.com/Ctzfamily/VegetaRobot/edit/Vegeta/VegetaRobot/modules/nsfw.py) ,
-Also thanks to [EverythingSuckz](https://t.me/EverythingSuckz) for NSFW filter. and full sucks removed by [CT_PRO](t.me/ctzfamily)
-    
 Usage:
     
 /addnsfw : Enable NSFW mode
@@ -226,4 +223,4 @@ Commands :
  - /baka: Sends Random Baka Shout GIFs.
 """
 
-__mod_name__ = "🐰AnimePG"
+__mod_name__ = "🐰 AnimePG"
