@@ -449,7 +449,7 @@ async def cb_handler(client: pgram, query: CallbackQuery):
         elif query.data == "rmbgsticker":
             await removebg_sticker(client, query.message)
 
-__mod_name__ = "🖼 Image Editor"
+__mod_name__ = "🖼 Editor"
 __help__ = """
 Marie have some advanced image editing tools inbuilt
 Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
