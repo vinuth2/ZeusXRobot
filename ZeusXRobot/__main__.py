@@ -98,7 +98,7 @@ buttons = [
                     [                  
                        InlineKeyboardButton(
                              text="⚙ Marie News",
-                             url=f"https://t.me/The_Roboton"),
+                             url=f"https://t.me/Marie_Updates"),
                        InlineKeyboardButton(
                              text="💬 Support",
                              url=f"https://t.me/MusicUpdates_chat"),
