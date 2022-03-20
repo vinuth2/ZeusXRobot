@@ -316,13 +316,13 @@ def text5(update, context):
             
 __help__ = """
 
- ❍ `/text1`*:* reply to the text.
- ❍ `/text2`*:* reply to the text.
- ❍ `/text3`*:* reply to the text.
- ❍ `/text4`*:* reply to the text.
- ❍ `/text5`*:* reply to the text.
+ • `/text1`*:* reply to the text.
+ • `/text2`*:* reply to the text.
+ • `/text3`*:* reply to the text.
+ • `/text4`*:* reply to the text.
+ • `/text5`*:* reply to the text.
 """
-__mod_name__ = "🎇Styletext"
+__mod_name__ = "🎇 Style text"
 
 TEXT1_HANDLER = DisableAbleCommandHandler("text1", text1)
 TEXT2_HANDLER = DisableAbleCommandHandler("text2", text2)
