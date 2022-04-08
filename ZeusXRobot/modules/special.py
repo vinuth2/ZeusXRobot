@@ -75,7 +75,7 @@ Make me send a message to a specific chat.
   `/zombies clean`*:* remove a deleted acc in chat.
 """
 
-__mod_name__ = "😁 Special"
+__mod_name__ = "Special"
 
 SNIPE_HANDLER = CommandHandler(
     "snipe",
