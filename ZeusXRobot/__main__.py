@@ -119,7 +119,7 @@ To make me functional, make sure that i have enough rights in your group.
 - /donate: Gives you info on how to support me and my creator.
 
 If you want to report bugs or have any questions on how to use me then feel free to reach out support group.
-All commands can be used with the following: / or ! [.](https://telegra.ph/file/35b40ed60c1df7765dcdd.jpg)
+All commands can be used with the following: / or ! [­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­](https://telegra.ph/file/35b40ed60c1df7765dcdd.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
