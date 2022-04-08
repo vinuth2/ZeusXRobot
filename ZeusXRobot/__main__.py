@@ -112,7 +112,8 @@ buttons = [
 HELP_STRINGS = """
 Hi there, I'm *{}*!
 To make me functional, make sure that i have enough rights in your group.
-Helpful commands:
+
+*Helpful commands:*
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
