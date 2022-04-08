@@ -48,7 +48,7 @@ class AioHttp:
             return await resp.read()
 
 
-__mod_name__ = "Inline"
+__mod_name__ = "🔎 Inline"
 __help__ = f"""
 INLINE BOT SERVICE OF MARIE
 I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.
@@ -92,7 +92,7 @@ I'm more efficient when added as group admin. By the way these commands can be u
 • pokedex [TEXT]: Pokemon Search
 """
 
-__MODULE__ = "🔎 Inline"
+__MODULE__ = "Inline"
 __HELP__ = f"""
  ==>> **INLINE BOT SERVICE OF MARIE** <<==
 `I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.`
